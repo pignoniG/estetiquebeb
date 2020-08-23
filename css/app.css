@@ -1,0 +1,82 @@
+
+/*generali inizio*/
+body{
+font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+font-weight: 500;
+color: #000;
+}
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+font-style: normal;
+font-weight: normal;
+color: inherit;
+text-rendering: optimizeLegibility;
+}
+
+
+/*generali fine*/
+
+
+
+
+/* Corpo offerte e rattamenti inizio */
+
+	/* Corpo offerte e rattamenti  general*/
+
+	/* Corpo offerte e rattamenti  extra medium*/
+
+		@media only screen and (min-width: 63.9375em)  {
+		}
+
+	/* Corpo offerte e rattamenti  medium*/
+
+		@media only screen and (max-width: 63.9375em)  {
+		}
+
+	/* Corpo offerte e rattamenti  mobile*/
+
+		@media screen and (max-width: 39.9375em) {
+		}
+
+	/* Corpo offerte e rattamenti  extra mobile*/
+		@media screen and (max-width: 28.125em) {
+		}
+
+
+/* Corpo offerte e rattamenti fine */
+
+
+
+
+
+
+
+
+/* XXXXX inizio */
+
+	/* XXXXX  general*/
+
+	/* XXXXX  extra medium*/
+
+		@media only screen and (min-width: 63.9375em)  {
+		}
+
+	/* XXXXX  medium*/
+
+		@media only screen and (max-width: 63.9375em)  {
+		}
+
+	/* XXXXX  mobile*/
+
+		@media screen and (max-width: 39.9375em) {
+		}
+
+	/* XXXXX  extra mobile*/
+		@media screen and (max-width: 28.125em) {
+		}
+
+
+/* XXXXX fine */

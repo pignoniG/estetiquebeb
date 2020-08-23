@@ -169,6 +169,19 @@ function estetiquebeb_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'estetiquebeb_scripts' );
 
+
+
+function offerte_js(){
+    if (is_singular( 'offerte' )){
+    	wp_enqueue_style( 'TimeCircles-style-foundation', get_template_directory_uri() . '/css/TimeCircles.css' );
+	    wp_enqueue_script( 'TimeCircles-script', get_template_directory_uri() . '/js/TimeCircles.js', array(), '1', true );
+	    wp_enqueue_script( 'offerte-script', get_template_directory_uri() . '/js/offerte.js', array(), '1', true );
+
+}}
+add_action('wp_enqueue_scripts', 'offerte_js');
+
+
+
 /**
  * Implement the Custom Header feature.
  */
