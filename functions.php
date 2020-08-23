@@ -144,9 +144,15 @@ add_action( 'widgets_init', 'estetiquebeb_widgets_init' );
  */
 function estetiquebeb_scripts() {
 
-	wp_enqueue_style( 'vud-style-foundation', get_template_directory_uri() . '/css/foundation.css' );
+
+	wp_enqueue_style( 'estetiquebeb-style-lato', "https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" );
+
+	wp_enqueue_style( 'estetiquebeb-style-foundation', get_template_directory_uri() . '/css/foundation.css' );
 
 	wp_enqueue_style( 'estetiquebeb-style', get_stylesheet_uri(), array(), _S_VERSION );
+
+	wp_enqueue_style( 'estetiquebeb-style-apa', get_template_directory_uri() . '/css/app.css' );
+
 	wp_style_add_data( 'estetiquebeb-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'estetiquebeb-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
