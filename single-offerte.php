@@ -107,6 +107,7 @@ get_header();
 					<p class="commento_prezzo"> <?php the_field('commento_prezzo'); ?> </p>
 
 				</div>
+			</div>
 
 			
 
@@ -170,12 +171,15 @@ get_header();
 
 
 
-		
+		<div class="grid-x">
+
+		</div>
+			<div class="cell form">
 
 
-
-		
 			</div>
+
+
 		</div>
 
 
