@@ -181,10 +181,6 @@ function offerte_js(){
 add_action('wp_enqueue_scripts', 'offerte_js');
 
 
-function post_title_shortcode(){
-    return get_the_title();
-}
-add_shortcode('post_title','post_title_shortcode');
 
 /**
  * Implement the Custom Header feature.

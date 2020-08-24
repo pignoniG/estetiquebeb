@@ -176,6 +176,7 @@ get_header();
 		</div>
 			<div class="cell form">
 
+			<?php echo do_shortcode('[contact-form-7 id="46" title="Offerte a tempo"]'); ?>
 
 			</div>
 
