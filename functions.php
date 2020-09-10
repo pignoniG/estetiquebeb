@@ -147,6 +147,8 @@ function estetiquebeb_scripts() {
 
 	wp_enqueue_style( 'estetiquebeb-style-lato', "https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" );
 
+	wp_enqueue_style( 'estetiquebeb-style-lora', "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" );
+
 	wp_enqueue_style( 'estetiquebeb-style-foundation', get_template_directory_uri() . '/css/foundation.css' );
 
 	wp_enqueue_style( 'estetiquebeb-style', get_stylesheet_uri(), array(), _S_VERSION );
