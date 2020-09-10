@@ -3,12 +3,13 @@
 body{
 font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
 font-weight: 500;
-color: #000;
+color: #808081;
 }
 .corsivo{
 font-family: 'Lora', serif;
 font-weight: 400;
-color: #000;
+color:#b6c219;
+font-style:italic;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -32,6 +33,62 @@ text-rendering: optimizeLegibility;
 	/* Corpo offerte e rattamenti  extra medium*/
 
 		@media only screen and (min-width: 63.9375em)  {
+			h3.titolo{
+				font-size:35px;
+				text-align:center;
+			}
+
+			div.cell.titoli{
+				padding-top: 80px;
+			}
+
+			h2.sottotitolo.maiuscolo{
+				text-align: center;
+   				color: #808081;
+   				letter-spacing: 0.5rem;
+   				font-size: 35px;
+			}
+
+			div.cell.prezzi{
+				 margin-top: 120px;
+			}
+
+			h4.prezzo.barrato{
+    			text-align: center;
+    			text-decoration: line-through;
+    			font-size: 42.5px;
+    			line-height: 5px;
+    			margin: 0;
+			}
+
+			h2.prezzo{
+				font-size:85px;
+				text-align: center;
+				margin: 0;			
+			}
+
+			p.commento_prezzo{
+				text-align: center;
+    			font-size: 18px;
+			}
+			h4.titolo{
+				font-size: 35px;	
+			}
+			h5.sottotitolo.maiuscolo{
+				letter-spacing: 0.25rem;
+   				font-size: 35px;
+
+			}
+			div.testo_blocco, div.contact-container p{
+				font-size: 18px;
+   				 width: 75%;
+			}
+			div.contact-container p{
+				width:100%;
+			}
+			div.contact-container{
+				text-align: center;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  medium*/

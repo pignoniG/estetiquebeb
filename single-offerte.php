@@ -34,7 +34,9 @@ get_header();
 				</div>
 
 
-
+				<div class="cell timerContainer small-12 medium-12 large-12">
+					
+					<div class="grid-x">
 
 				
 				<?php 
@@ -55,24 +57,24 @@ get_header();
 
 
 				<?php if ($giorni > 0): ?>
-					<div class="cell timer small-12 medium-3 large-3">
+					<div class="cell timer small-12 medium-4 large-4">
 
 						<div id="countdownOfferta_giorni" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
 
 					</div>
-					<div class="cell timer small-6 medium-3 large-3">
+					<div class="cell timer small-6 medium-4 large-4">
 
 		
 
 				<?php else: ?>
-					<div class="cell timer small-12 medium-3 large-3">
+					<div class="cell timer small-12 medium-4 large-4">
 				<?php endif; ?>
 
 						<div id="countdownOfferta_ore" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
 
 					</div>
 
-				<div class="cell timer small-6 medium-3 large-3">
+				<div class="cell timer small-6 medium-4 large-4">
 
 					<div id="countdownOfferta_minuti" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
 				</div>
@@ -91,7 +93,8 @@ get_header();
 
 					<?php endif; ?>
 					
-
+					</div>
+					</div>
 
 					<div id="offerta_scaduta" style="<?php if ($adesso  < $scadenza) { echo "display: none;"; }?>">
 
@@ -172,9 +175,13 @@ get_header();
 
 
 		<div class="grid-x">
+			<div class="cell small-12 medium-8 large-6 large-offset-3 medium-offset-2 contact-container">
+				<h4 class="titolo corsivo"> Contattaci</h4>
+				<h5 class="sottotitolo maiuscolo">PRENOTA L’OFFERTA</h5>
+				<p>Compilate il form e Sarete contattati telefonicamente dal nostro staff. Insieme fisseremo la data per il trattamento.</p>
+			</div>
 
-		</div>
-			<div class="cell form">
+			<div class="cell small-12 medium-8 large-4 large-offset-4 medium-offset-2 form">
 
 			<?php echo do_shortcode('[contact-form-7 id="46" title="Offerte a tempo"]'); ?>
 
