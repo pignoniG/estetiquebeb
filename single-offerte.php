@@ -29,7 +29,7 @@ get_header();
 
 					<?php the_title( '<h3 class="titolo corsivo">', '</h3>' ); ?>
 
-					<h2 class="sottotitolo maiuscolo> <?php the_field('sottotitolo'); ?></h2>
+					<h2 class="sottotitolo maiuscolo"> <?php the_field('sottotitolo'); ?></h2>
 
 				</div>
 
