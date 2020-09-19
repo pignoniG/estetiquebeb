@@ -57,9 +57,9 @@ get_header();
 
 
 				<?php if ($giorni > 0): ?>
-					<div class="cell timer small-12 medium-4 large-4">
+					<div class="cell timer small-12 medium-4 large-4 first_countdown">
 
-						<div id="countdownOfferta_giorni" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
+						<div id="countdownOfferta_giorni" data-date="<?php echo get_field('data_di_scadenza') ;?>" class="countdownBox " style=""></div>
 
 					</div>
 					<div class="cell timer small-6 medium-4 large-4">
@@ -67,18 +67,17 @@ get_header();
 		
 
 				<?php else: ?>
-					<div class="cell timer small-12 medium-4 large-4">
+					<div class="cell timer small-12 medium-4 large-4 first_countdown">
 				<?php endif; ?>
 
-						<div id="countdownOfferta_ore" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
+						<div id="countdownOfferta_ore" data-date="<?php echo get_field('data_di_scadenza') ;?>" class="countdownBox" style=""></div>
 
 					</div>
 
 				<div class="cell timer small-6 medium-4 large-4">
 
-					<div id="countdownOfferta_minuti" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
+					<div id="countdownOfferta_minuti" data-date="<?php echo get_field('data_di_scadenza') ;?>" class="countdownBox" style=""></div>
 				</div>
-
 
 
 					
@@ -88,7 +87,7 @@ get_header();
 					<?php if ($giorni < 1): ?>
 						<div class="cell timer cell small-6 medium-3 large-3">
 
-							<div id="countdownOfferta_secondi" data-date="<?php echo get_field('data_di_scadenza') ;?>" style="width: 125px; height: 125px; padding: 0px; box-sizing: border-box;"></div>
+							<div id="countdownOfferta_secondi" data-date="<?php echo get_field('data_di_scadenza') ;?>" class="countdownBox" style=""></div>
 							</div>
 
 					<?php endif; ?>
@@ -134,7 +133,7 @@ get_header();
 							$immagine_blocco = get_sub_field('immagine_blocco');
 							$testo_blocco = get_sub_field('testo_blocco');
 						    
-							
+
 						    if(($contatore_corpo % 2) == 0){ 
 						    	
 						    	include(locate_template('template-parts/body_left.php'));

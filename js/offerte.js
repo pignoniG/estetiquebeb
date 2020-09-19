@@ -32,6 +32,16 @@ function hasScrolledOfferte() {
         }
     }
 
+
+$(window).on('resize', function(){
+            $("#countdownOfferta_giorni").TimeCircles().rebuild();
+            $("#countdownOfferta_ore").TimeCircles().rebuild();
+            $("#countdownOfferta_minuti").TimeCircles().rebuild();
+            $("#countdownOfferta_secondi").TimeCircles().rebuild();
+});
+
+
+
 jQuery(document).ready(function () {
 
     var didScroll = true;

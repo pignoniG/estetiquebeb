@@ -109,6 +109,16 @@ div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco
 
 
 
+div.countdownBox{
+	width: 20vw; 
+	height: 20vw; 
+	max-width: 250px;
+	max-height: 250px;
+	padding: 0px; 
+	box-sizing: border-box; 
+	margin-left: auto; 
+	margin-right: auto;
+}
 
 
 
@@ -255,6 +265,8 @@ div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco
 
 		}
 
+
+
 	/* Corpo offerte e rattamenti  medium*/
 
 		@media only screen and (max-width: 63.9375em)  {
@@ -263,6 +275,24 @@ div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco
 	/* Corpo offerte e rattamenti  mobile*/
 
 		@media screen and (max-width: 39.9375em) {
+
+			div.countdownBox{
+				width: 35vw; 
+				height: 35vw; 
+
+
+				padding: 0px; 
+				box-sizing: border-box; 
+				margin-left: auto; 
+				margin-right: auto;
+				
+			}
+
+			div.first_countdown div.countdownBox {
+				margin-bottom: -10vw;
+
+			}
+
 
 			div.sovra_contenitore_corpo.right{
 				margin-right: 0;
