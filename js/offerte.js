@@ -10,14 +10,13 @@ function hasScrolledOfferte() {
     $( ".green_frame" ).each(function( index ) {
         var offset = $( this ).offset();
         var height = $( this ).outerHeight();
-        console.log(scroll);
-        console.log(offset);
+ 
 
         var scroll_margin = height;
 
         if (scroll> offset.top + scroll_margin) {
             $( this ).addClass( "visible" );
-            console.log("visible");
+           
         }
     });
 }

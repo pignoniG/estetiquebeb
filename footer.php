@@ -12,19 +12,24 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'estetiquebeb' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'estetiquebeb' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'estetiquebeb' ), 'estetiquebeb', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+
+		<div class="grid-container">
+			<div class="grid-x">
+
+				<div class="cell map_container">
+					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JGJBNKxMdAoqopOGXCjaift5A17FkviY" ></iframe>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		
+
+	
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
