@@ -11,6 +11,7 @@ main{
 	display: block;
 	max-width: 100vw;
 	overflow-x: hidden;
+	overflow-y: hidden;
 
 }
 
@@ -162,6 +163,12 @@ div.countdownBox{
    				letter-spacing: 0.5rem;
    				font-size: 30px;
 			}
+			div.textDiv_Hours h4, div.textDiv_Hours span,
+			div.textDiv_Days h4, div.textDiv_Days span,
+			div.textDiv_Minutes h4, div.textDiv_Minutes span,
+			div.textDiv_Seconds h4, div.textDiv_Seconds span{
+				font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif!important;
+			}
 
 			div.cell.prezzi{
 				 margin-top: 120px;
@@ -283,6 +290,9 @@ div.countdownBox{
 			div.contenitore_corpo.tabella table tbody tr:first-child{
    				border-top: 2px solid #80808157;
 			}
+			div.sovra_contenitore_corpo.left{
+				margin-top:70px;
+			}
 
 		}
 
@@ -291,11 +301,172 @@ div.countdownBox{
 	/* Corpo offerte e rattamenti  medium*/
 
 		@media only screen and (max-width: 63.9375em)  {
+			h3.titolo{
+				font-size:32px;
+				text-align:center;
+			}
+
+			div.cell.titoli{
+				padding-top: 80px;
+			}
+
+			h2.sottotitolo.maiuscolo{
+				text-align: center;
+   				color: #808081;
+   				letter-spacing: 0.5rem;
+   				font-size: 30px;
+			}
+			div.textDiv_Hours h4, div.textDiv_Hours span,
+			div.textDiv_Days h4, div.textDiv_Days span,
+			div.textDiv_Minutes h4, div.textDiv_Minutes span,
+			div.textDiv_Seconds h4, div.textDiv_Seconds span{
+				font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif!important;
+			}
+
+			div.cell.prezzi{
+				 margin-top: 120px;
+			}
+
+			h4.prezzo.barrato{
+    			text-align: center;
+    			text-decoration: line-through;
+    			font-size: 42.5px;
+    			line-height: 5px;
+    			margin: 0;
+			}
+
+			h2.prezzo{
+				font-size:85px;
+				text-align: center;
+				margin: 0;			
+			}
+
+			p.commento_prezzo{
+				text-align: center;
+    			font-size: 18px;
+			}
+			h4.titolo{
+				font-size: 32px;	
+			}
+			h5.sottotitolo.maiuscolo{
+				letter-spacing: 0.25rem;
+   				font-size: 30px;
+
+			}
+			div.testo_blocco, div.contact-container p{
+				font-size: 18px;
+   				 width: 75%;
+			}
+			div.contact-container p{
+				width:100%;
+			}
+			div.contact-container{
+				text-align: center;
+				margin-top: 70px;
+			}
+
+			form.wpcf7-form p, span.wpcf7-form-control-wrap input, span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
+			margin:0;
+			}
+			span.wpcf7-form-control-wrap input{
+				padding-left: 15px;
+    			border: 3px solid #8080816b;
+    			background: white;
+    			border-radius: 10px;
+    			color: #8080819e;
+    			height: 50px;
+    			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+    			font-weight: 1000;
+			}
+			span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
+			margin-top: 10px;
+			}
+			span.wpcf7-list-item-label{
+			color:#808081;	
+			}
+			input.wpcf7-form-control.wpcf7-submit{
+				margin-top: 50px;
+    			-ms-transform: translateY(-50%);
+    			top: 50%;
+    			left: 50%;
+    			position: relative;
+    			background: white;
+    			border: 3px solid #b6c219;
+    			width: 250px;
+    			height: 50px;
+    			color: #b6c219;
+    			padding-bottom: 8px;
+    			-ms-transform: translate(-50%, -50%);
+    			transform: translate(-50%, -50%);
+    			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+    			font-weight: 1000;
+    			letter-spacing: 1px;
+			}
+			input[type='checkbox']{
+			height: 13px!important;
+			}
+			input[type="email"]:focus, input[type="text"]:focus,input[type="tel"]:focus{
+			color:#b6c219;
+			border: 1px solid #b6c219;
+    		-webkit-box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1);
+    		box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1);
+			}
+			div.contenitore_corpo.tabella {
+				text-align:center;
+				margin-top: 70px;
+			}
+			div.contenitore_corpo.tabella table{
+				text-align: left;
+				margin-top: 50px;
+			}
+			div.contenitore_corpo.tabella table thead,
+			div.contenitore_corpo.tabella table thead tr th{
+				color: #808081;
+    			background: white;
+    			border: none;
+    			font-weight: 400;
+    			font-size: 28px;
+			}
+			div.contenitore_corpo.tabella table thead tr th,
+			div.contenitore_corpo.tabella table tbody tr td{
+			padding-left: 50px;
+    		padding-right: 50px;}
+    		div.contenitore_corpo.tabella table tbody{
+    			border-collapse: collapse;
+    			border:none;
+    		}
+			div.contenitore_corpo.tabella table tbody tr{
+				background: white;
+   				border-bottom: 2px solid #80808157;
+   				height: 55px;
+			}
+			div.contenitore_corpo.tabella table tbody tr:first-child{
+   				border-top: 2px solid #80808157;
+			}
+			div.sovra_contenitore_corpo.left{
+				margin-top:70px;
+			}
+
 		}
 
 	/* Corpo offerte e rattamenti  mobile*/
 
 		@media screen and (max-width: 39.9375em) {
+			div.contenitore_corpo.tabella table thead tr th, div.contenitore_corpo.tabella table tbody tr td{
+   			 padding-left: 15px;
+    		 padding-right: 10px;
+    		 vertical-align: bottom;
+			}
+			div.contenitore_corpo.left{
+				margin-top:50px;
+			}
+			div.contenitore_corpo.testo{
+				margin-left: 5vw;
+			    width: 90vw;
+			}
+			div.testo_blocco, div.contact-container p{
+				width:100%;
+			}
 
 			div.countdownBox{
 				width: 35vw; 
@@ -321,13 +492,6 @@ div.countdownBox{
 
 			}
 
-			div.contenitore_corpo.testo{
-				margin-left: 0.9375rem;
-			}
-
-
-
-
 			div.contenitore_corpo.immagine.right div.green_frame {
 				left: -6rem;
 				right: initial;}
@@ -350,6 +514,24 @@ div.countdownBox{
 
 	/* Corpo offerte e rattamenti  extra mobile*/
 		@media screen and (max-width: 28.125em) {
+			h5.sottotitolo.maiuscolo, h2.sottotitolo.maiuscolo{
+				font-size: 24px;
+				letter-spacing: 0.25rem;
+			}
+
+			div.contenitore_corpo.tabella table thead, div.contenitore_corpo.tabella table thead tr th{
+				font-size: 20px;
+			}
+			div.contenitore_corpo.left{
+				margin-top:50px;
+			}
+			div.contenitore_corpo.testo{
+				margin-left: 6vw;
+			    width: 89vw;
+			}
+			div.testo_blocco, div.contact-container p{
+				width:100%;
+			}
 		}
 
 

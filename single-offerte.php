@@ -182,7 +182,7 @@ get_header();
 				<p>Compilate il form e Sarete contattati telefonicamente dal nostro staff. Insieme fisseremo la data per il trattamento.</p>
 			</div>
 
-			<div class="cell small-12 medium-8 large-4 large-offset-4 medium-offset-2 form">
+			<div class="cell small-10 medium-4 large-4 small-offset-1 large-offset-4 medium-offset-4 form">
 
 			<?php echo do_shortcode('[contact-form-7 id="46" title="Offerte a tempo"]'); ?>
 
