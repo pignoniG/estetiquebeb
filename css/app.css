@@ -532,6 +532,18 @@ div.countdownBox{
 			div.testo_blocco, div.contact-container p{
 				width:100%;
 			}
+			div.textDiv_Hours h4, div.textDiv_Hours span,
+			div.textDiv_Days h4, div.textDiv_Days span,
+			div.textDiv_Minutes h4, div.textDiv_Minutes span,
+			div.textDiv_Seconds h4, div.textDiv_Seconds span{
+				font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif!important;
+			}
+			div.textDiv_Hours span, div.textDiv_Days span, div.textDiv_Minutes span, div.textDiv_Seconds span{
+				font-size:35px!important;
+			}
+			div.textDiv_Hours h4,  div.textDiv_Days h4, div.textDiv_Minutes h4, div.textDiv_Seconds h4{
+				font-size:11px!important;
+			}
 		}
 
 
