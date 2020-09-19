@@ -9,8 +9,8 @@
 
 
 ?>
-<div class="grid-x">
-	<div class="cell small-12 medium-6 large-6 contenitore_corpo right testo small-order-2">
+<div class="grid-x sovra_contenitore_corpo right">
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo right testo medium-order-1 small-order-2">
 	
 		<?php if( !empty( $titolo_blocco ) ): ?>
 			<h4 class="titolo corsivo"> <?php echo $titolo_blocco; ?> </h4>	
@@ -25,7 +25,7 @@
 		<?php endif; ?>
 	
 	</div>
-	<div class="cell small-12 small-6 large-6 contenitore_corpo right imamgine medium-order-1">
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo right immagine medium-order-2  small-order-1">
 		 
 			
 		<div class="green_frame">

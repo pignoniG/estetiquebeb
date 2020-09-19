@@ -1,23 +1,59 @@
 
-            function countdownComplete(unit, value, total){
-                console.log("cazzo");
 
-                if(total<=0){
 
-                    $("#offerta_scaduta").show();
 
-                }
-            }
+function hasScrolledOfferte() {
+
+    var scroll = $(window).scrollTop() + $(window).height();
+    var scroll_margin_top =$(window).height();
+
+    $( ".green_frame" ).each(function( index ) {
+        var offset = $( this ).offset();
+        var height = $( this ).outerHeight();
+        console.log(scroll);
+        console.log(offset);
+
+        var scroll_margin = height;
+
+        if (scroll> offset.top + scroll_margin) {
+            $( this ).addClass( "visible" );
+            console.log("visible");
+        }
+    });
+}
+
+    function countdownComplete(unit, value, total){
+    
+
+        if(total<=0){
+
+            $("#offerta_scaduta").show();
+
+        }
+    }
 
 jQuery(document).ready(function () {
+
+    var didScroll = true;
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+        if (didScroll) {
+            hasScrolledOfferte();
+            didScroll = false;
+        }}, 50);
+
+
+
+
             $("#countdownOfferta_giorni").TimeCircles({ time: { Days: { show: true } }});
-
             $("#countdownOfferta_ore").TimeCircles({ time: { Hours: { show: true } }});
-
             $("#countdownOfferta_minuti").TimeCircles({ time: { Minutes: { show: true } }})
-
             $("#countdownOfferta_secondi").TimeCircles({ time: {  Seconds: { show: true } }}).addListener(countdownComplete);;
 })
 
 
     
+

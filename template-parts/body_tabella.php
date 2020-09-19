@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="grid-x">
+<div class="grid-x sovra_contenitore_corpo">
 	<div class="cell small-12 medium-12 large-12 contenitore_corpo tabella">
 	
 		<?php if( !empty( $titolo_blocco ) ): ?>

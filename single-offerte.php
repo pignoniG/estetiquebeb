@@ -134,13 +134,15 @@ get_header();
 							$immagine_blocco = get_sub_field('immagine_blocco');
 							$testo_blocco = get_sub_field('testo_blocco');
 						    
-
+							
 						    if(($contatore_corpo % 2) == 0){ 
+						    	
 						    	include(locate_template('template-parts/body_left.php'));
 						    }
 						    else{
 						    	include(locate_template('template-parts/body_right.php'));
 						    }
+
 						    $contatore_corpo++;  
 
 						}

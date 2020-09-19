@@ -10,11 +10,11 @@
 
 ?>
 
-<div class="grid-x">
-	<div class="cell small-12 medium-6 large-6 contenitore_corpo left imamgine ">
+<div class="grid-x sovra_contenitore_corpo left">
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo left immagine ">
 		 
 			
-		<div class="green_frame">
+		<div class="green_frame"> 
 			<?php if( !empty( $immagine_blocco ) ): ?>
 	
 			<img class="immagine_blocco" src="<?php echo esc_url($immagine_blocco['url']); ?>" alt="<?php echo esc_attr($immagine_blocco['alt']); ?>" />

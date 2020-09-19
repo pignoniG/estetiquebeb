@@ -4,6 +4,7 @@ body{
 font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
 font-weight: 500;
 color: #808081;
+
 }
 .corsivo{
 font-family: 'Lora', serif;
@@ -30,6 +31,87 @@ text-rendering: optimizeLegibility;
 /* Corpo offerte e rattamenti inizio */
 
 	/* Corpo offerte e rattamenti  general*/
+
+
+
+
+div.sovra_contenitore_corpo{
+	margin-bottom: 2rem;
+	max-width: 100vw;
+	overflow: hidden;
+
+}
+
+div.sovra_contenitore_corpo.left{
+	margin-left: -0.9375rem;
+}
+
+
+div.sovra_contenitore_corpo.right{
+	margin-right: -0.9375rem;
+}
+
+
+div.contenitore_corpo.immagine div.green_frame{
+
+	border: solid 8px;
+	border-color: #B6C219;
+	padding-top: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 50px;
+
+	position: relative;
+	transition: left 1s,right 1s;
+	
+}
+
+div.contenitore_corpo.immagine div.green_frame img.immagine_blocco{
+	height: auto;
+	width: calc(100% + 240px);
+	max-width: calc(100% + 240px);
+	position: relative;
+	transition: left 1.5s,right 1.5s;
+}
+
+
+div.contenitore_corpo.immagine.left div.green_frame {
+	left: -100vw;}
+
+div.contenitore_corpo.immagine.right div.green_frame {
+	right: -100vw;}
+
+div.contenitore_corpo.immagine.left div.green_frame  img.immagine_blocco{
+	left: -100vw;}
+
+div.contenitore_corpo.immagine.right div.green_frame  img.immagine_blocco{
+	right: -100vw;}
+
+
+
+
+div.contenitore_corpo.immagine.left div.green_frame.visible{
+	left: -6rem;
+}
+
+div.contenitore_corpo.immagine.right div.green_frame.visible{
+	right: -6rem;
+}
+
+
+div.contenitore_corpo.immagine.left div.green_frame.visible img.immagine_blocco{
+	left: -7rem;
+}
+
+div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco{
+	right:  8rem;
+}
+
+
+
+
+
+
 
 	/* Corpo offerte e rattamenti  extra medium*/
 
@@ -96,14 +178,14 @@ text-rendering: optimizeLegibility;
 			margin:0;
 			}
 			span.wpcf7-form-control-wrap input{
-			padding-left: 15px;
-    		border: 3px solid #8080816b;
-    		background: white;
-    		border-radius: 10px;
-    		color: #8080819e;
-    		height: 50px;
-    		font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
-    		font-weight: 1000;
+				padding-left: 15px;
+    			border: 3px solid #8080816b;
+    			background: white;
+    			border-radius: 10px;
+    			color: #8080819e;
+    			height: 50px;
+    			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+    			font-weight: 1000;
 			}
 			span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
 			margin-top: 10px;
@@ -112,22 +194,22 @@ text-rendering: optimizeLegibility;
 			color:#808081;	
 			}
 			input.wpcf7-form-control.wpcf7-submit{
-			margin-top: 50px;
-    		-ms-transform: translateY(-50%);
-    		top: 50%;
-    		left: 50%;
-    		position: relative;
-    		background: white;
-    		border: 3px solid #b6c219;
-    		width: 250px;
-    		height: 50px;
-    		color: #b6c219;
-    		padding-bottom: 8px;
-    		-ms-transform: translate(-50%, -50%);
-    		transform: translate(-50%, -50%);
-    		font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
-    		font-weight: 1000;
-    		letter-spacing: 1px;
+				margin-top: 50px;
+    			-ms-transform: translateY(-50%);
+    			top: 50%;
+    			left: 50%;
+    			position: relative;
+    			background: white;
+    			border: 3px solid #b6c219;
+    			width: 250px;
+    			height: 50px;
+    			color: #b6c219;
+    			padding-bottom: 8px;
+    			-ms-transform: translate(-50%, -50%);
+    			transform: translate(-50%, -50%);
+    			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+    			font-weight: 1000;
+    			letter-spacing: 1px;
 			}
 			input[type='checkbox']{
 			height: 13px!important;
@@ -181,6 +263,38 @@ text-rendering: optimizeLegibility;
 	/* Corpo offerte e rattamenti  mobile*/
 
 		@media screen and (max-width: 39.9375em) {
+
+			div.sovra_contenitore_corpo.right{
+				margin-right: 0;
+				margin-left: -0.9375rem;
+
+			}
+
+			div.contenitore_corpo.testo{
+				margin-left: 0.9375rem;
+			}
+
+
+
+
+			div.contenitore_corpo.immagine.right div.green_frame {
+				left: -6rem;
+				right: initial;}
+			
+			div.contenitore_corpo.immagine.right div.green_frame  img.immagine_blocco{
+				left: -100vw;
+				right: initial;}
+			
+			
+			div.contenitore_corpo.immagine.right div.green_frame.visible{
+				left: -6rem;
+				right: initial;
+			}
+			
+			div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco{
+				left: -7rem;
+				right: initial;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  extra mobile*/
