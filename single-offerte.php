@@ -95,7 +95,7 @@ get_header();
 					</div>
 					</div>
 
-					<div id="offerta_scaduta" style="<?php if ($adesso  < $scadenza) { echo "display: none;"; }?>">
+					<div class="cell" id="offerta_scaduta" style="<?php if ($adesso  < $scadenza) { echo "display: none;"; }?>">
 
 						<h2 class="offerta_scaduta">Questa offerta è scaduta.</h2>
 					</div>
@@ -103,7 +103,7 @@ get_header();
 
 				<div class="cell prezzi">
 
-					<h4 class="prezzo barrato"> <?php the_field('prezzo_intero'); ?>€</h4>
+					<h4 class="prezzo barrato"> <span class="strikethrough"><?php the_field('prezzo_intero'); ?>€</span></h4>
 					<h2 class="prezzo"> <?php the_field('prezzo_ridotto'); ?>€</h2>
 
 					<p class="commento_prezzo"> <?php the_field('commento_prezzo'); ?> </p>
@@ -185,10 +185,8 @@ get_header();
 			<div class="cell small-10 medium-4 large-4 small-offset-1 large-offset-4 medium-offset-4 form">
 
 			<?php echo do_shortcode('[contact-form-7 id="46" title="Offerte a tempo"]'); ?>
-
+			
 			</div>
-
-
 		</div>
 
 
