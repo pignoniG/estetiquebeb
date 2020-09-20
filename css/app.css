@@ -360,13 +360,22 @@ h2.offerta_scaduta{
 			div.map_container{
 				margin-bottom: 70px;
 			}
-			.indirizzi, .orari{
-				text-align: center;
+			.indirizzi, .orari, .indirizzi h3, .orari h3, .indirizzi h2, .orari h2{
+				text-align: left!important;
 			}
+			.indirizzi, .orari {
+				font-size: 22px;
+				padding-left: 15vw;
+			}
+
 			.newsletter_container{
 				margin-top:70px;
 				text-align:center;
 				margin-bottom:40px;
+			}
+			.newsletter_container label{
+				color: #8080819e;
+				font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
 			}
 			.logo_container{
 				margin-top: 70px;
@@ -376,6 +385,9 @@ h2.offerta_scaduta{
     			margin-right: auto;
     			width: 50%;
     			text-align: center;
+			}
+			.logo_container img{
+				width:10vw;
 			}
 		}
 
@@ -533,7 +545,77 @@ h2.offerta_scaduta{
 			div.sovra_contenitore_corpo.left{
 				margin-top:70px;
 			}
+			div.offerta_in_evidenza_container{
+				margin-top:90px;
+				background-size: cover;
+    			background-repeat: no-repeat;
+    			background-position: center;
+    			height: 65vh;
+			}
 
+			div.offerta_in_evidenza_testo{
+				background: #ffffffb8;
+    			width: 40vw;
+    			margin-top: 7%;
+    			margin-left: 5vw;
+    			padding: 20px;
+    			padding-right: 50px;
+			}
+			div.offerta_in_evidenza_testo a{
+				margin-top: 10px;
+    			-ms-transform: translateY(-50%);
+    			position: relative;
+    			background: transparent;
+    			border: 3px solid #b6c219;
+    			width: 90%;
+    			height: 50px;
+    			color: #b6c219;
+    			padding-bottom: 8px;
+    			line-height: 18px;
+    			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+    			font-weight: 1000;
+    			letter-spacing: 1px;
+			}
+			div.offerta_in_evidenza_testo a:hover,
+			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover{
+				color: white;
+				background-color: #b6c219;
+				border-color: #b6c219;
+			}
+
+			div.map_container{
+				margin-bottom: 70px;
+			}
+
+			.indirizzi, .orari, .indirizzi h3, .orari h3, .indirizzi h2, .orari h2{
+				text-align: left!important;
+			}
+			.indirizzi, .orari {
+				font-size: 20px;
+				padding-left: 11vw;
+			}
+
+			.newsletter_container{
+				margin-top:70px;
+				text-align:center;
+				margin-bottom:40px;
+			}
+			.newsletter_container label{
+				color: #8080819e;
+				font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+			}
+			.logo_container{
+				margin-top: 70px;
+    			margin-bottom: 60px;
+    			display: block;
+    			margin-left: auto;
+    			margin-right: auto;
+    			width: 50%;
+    			text-align: center;
+			}
+			.logo_container img{
+				width:14vw;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  mobile*/
@@ -619,7 +701,7 @@ h2.offerta_scaduta{
     			position: relative;
     			background: transparent;
     			border: 3px solid #b6c219;
-    			width: 100%;
+    			width: 50%;
     			height: 50px;
     			color: #b6c219;
     			padding-bottom: 8px;
@@ -658,6 +740,12 @@ h2.offerta_scaduta{
     			width: 50%;
     			text-align: center;
 			}
+			.logo_container img{
+				width:17vw;
+			}
+			div.cell.map_container iframe {
+			    height: 60vh;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  extra mobile*/
@@ -691,6 +779,30 @@ h2.offerta_scaduta{
 			}
 			div.textDiv_Hours h4,  div.textDiv_Days h4, div.textDiv_Minutes h4, div.textDiv_Seconds h4{
 				font-size:11px!important;
+			}
+			div.offerta_in_evidenza_testo a{
+				margin-top: 10px;
+    			-ms-transform: translateY(-50%);
+    			position: relative;
+    			background: transparent;
+    			border: 3px solid #b6c219;
+    			width: 77%;
+    			height: 50px;
+    			color: #b6c219;
+    			padding-bottom: 8px;
+    			line-height: 18px;
+    			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
+    			font-weight: 1000;
+    			letter-spacing: 1px;
+			}
+			.logo_container img{
+				width:36vw;
+			}
+			.indirizzi, .orari {
+			    padding-left: 3vw;
+			}
+			div.cell.map_container iframe {
+			    height: 60vh;
 			}
 		}
 
