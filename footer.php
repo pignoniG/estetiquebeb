@@ -46,12 +46,12 @@
 
 
 
-				<div class="cell newsletter_container">
+				<div class="cell newsletter_container cell small-10 medium-8 large-6 large-offset-3 medium-offset-2 small-offset-1">
 					<div class="tnp tnp-subscription">
 					<form method="post" action="https://www.estetiquebeb-temporary.it/?na=s" onsubmit="return newsletter_check(this)">
 
 					<input type="hidden" name="nlang" value="">
-					<div class="tnp-field tnp-field-email"><label>Email</label><input class="tnp-email" type="email" name="ne" required></div>
+					<div class="tnp-field tnp-field-email"><input class="tnp-email" type="email" name="ne" required value="Email"></div>
 					<div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> Voglio ricevere mail promozionali riguardo le offerte di B&B Estetique.</label></div>
 					<div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> Accetto l’informativa sulla privacy.</label></div>
 
