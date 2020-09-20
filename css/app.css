@@ -142,7 +142,29 @@ div.countdownBox{
 	margin-right: auto;
 }
 
+h2.offerta_scaduta{
+	text-align: center;
+}
 
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: -6px;
+  top: 50%;
+  right: -6px;
+  border-top: 4px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-10deg);
+  -moz-transform:rotate(-10deg);
+  -ms-transform:rotate(-10deg);
+  -o-transform:rotate(-10deg);
+  transform:rotate(-10deg);
+}
 
 
 	/* Corpo offerte e rattamenti  extra medium*/
@@ -176,7 +198,7 @@ div.countdownBox{
 
 			h4.prezzo.barrato{
     			text-align: center;
-    			text-decoration: line-through;
+    			
     			font-size: 42.5px;
     			line-height: 5px;
     			margin: 0;
@@ -329,7 +351,7 @@ div.countdownBox{
 
 			h4.prezzo.barrato{
     			text-align: center;
-    			text-decoration: line-through;
+    	
     			font-size: 42.5px;
     			line-height: 5px;
     			margin: 0;
