@@ -182,7 +182,13 @@ function offerte_js(){
 }}
 add_action('wp_enqueue_scripts', 'offerte_js');
 
+function trattamenti_js(){
+    if (is_singular( 'trattamenti' )){
+    	
+	    wp_enqueue_script( 'trattamenti-script', get_template_directory_uri() . '/js/trattamenti.js', array(), '1', true );
 
+}}
+add_action('wp_enqueue_scripts', 'trattamenti_js');
 
 /**
  * Implement the Custom Header feature.
