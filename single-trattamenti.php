@@ -40,6 +40,8 @@ get_header();
 					 
 
 				</div>
+			</div>
+	
 
 
 
@@ -98,8 +100,8 @@ get_header();
 				?>
 
 
-
-
+			
+		</div>
 	</main><!-- #main -->
 
 <?php
