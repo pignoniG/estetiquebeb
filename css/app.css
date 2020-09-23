@@ -9,6 +9,7 @@ color: #808081;
 #wpadminbar{
 	display: none;
 }
+
 main{
 	display: block;
 	max-width: 100vw;
@@ -969,6 +970,8 @@ h2.offerta_scaduta{
 		color: #000; 
 
 		margin:  0px;
+		position: relative;
+		top: 9px;
 
 	}
 
