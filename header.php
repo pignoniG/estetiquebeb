@@ -161,3 +161,4 @@
 
 </div>	</div></div>	
 </header><!-- #masthead -->
+<?php wp_reset_query();?>
