@@ -338,7 +338,7 @@ function preventDefaultForScrollKeys(e) {
 function menu_scroll(){
   // Remove the # from the hash, as different browsers may or may not include it
     var hash = location.hash.replace('#','');
-    console.log("baubau");
+ 
 
     if(hash != ''){
 

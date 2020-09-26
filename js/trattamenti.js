@@ -42,13 +42,12 @@ jQuery(document).ready(function () {
             didScroll = false;
         }}, 50);
 
+
+
     $( "ul.sub-menu-element li.menu-element a" ).click(function() {
-       menu_scroll();
+        setTimeout(function(){ menu_scroll();}, 1);
+      
     });
-
-
-
-
 
 
 })
