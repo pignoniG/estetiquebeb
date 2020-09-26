@@ -916,7 +916,7 @@ table .strikethrough:before {
   		border-bottom: solid 3px transparent;
 	}
 
-	nav.top_navigation li.menu-element > a:hover {
+	nav.top_navigation li.menu-element > a:hover span ,nav.top_navigation > div >ul > li.menu-element > a:hover  {
   		border-bottom: solid 3px #C7CD29;
 	}
 
@@ -928,10 +928,11 @@ table .strikethrough:before {
 		border-bottom: solid 3px transparent;
 	}
 
-	header#masthead nav.top_navigation li.menu-element a.current{
+
+
+	nav.top_navigation li.menu-element > a.current span, nav.top_navigation > div > ul > li.menu-element > a.current {
 		border-bottom: solid 3px  #C7CD29;
 	}
-
 	nav.top_navigation li.menu-element button.svg_icon {
     	border: none;
     	color: #000;
@@ -1002,11 +1003,11 @@ table .strikethrough:before {
 		margin-left: 0px;
     	font-size: 17px;
     	letter-spacing: 0.5px;
-    	line-height: 17px;
+    	line-height: 22px;
     	margin-bottom: 3px;
     	margin-top: 5px;
     	display: block;
-    	padding-bottom: 5px;
+    	padding-bottom: 0px;
 	}
 	nav.top_navigation ul.sub-menu-element.nav-search{
 		position: absolute;
@@ -1078,7 +1079,7 @@ table .strikethrough:before {
 		float: right;
 	}
 
-	nav.top_navigation li.menu-element.imp:hover > a , nav.top_navigation #mobile_menu_toggle:hover > a {
+	nav.top_navigation li.menu-element.imp:hover > a , nav.top_navigation #mobile_menu_toggle:hover > a, a.site-title:hover {
 		border-bottom: solid 3px transparent;
 		filter: saturate(0%) brightness(80%);
 	}

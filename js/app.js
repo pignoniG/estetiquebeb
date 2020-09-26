@@ -198,8 +198,8 @@ function collapse_menu_elements(){
 var didScroll;
 var scrolledUp;
 var lastScrollTop = 0;
-var delta =5;
-var delta_down = 10;
+var delta =15;
+var delta_down = 25;
 
 
 
