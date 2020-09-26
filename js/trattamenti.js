@@ -12,7 +12,7 @@ function hasScrolledOfferte() {
         var height = $( this ).outerHeight();
  
 
-        var scroll_margin = height;
+        var scroll_margin = height*0.3;
 
         if (scroll> offset.top + scroll_margin) {
             $( this ).addClass( "visible" );
@@ -41,6 +41,14 @@ jQuery(document).ready(function () {
             hasScrolledOfferte();
             didScroll = false;
         }}, 50);
+
+    $( "ul.sub-menu-element li.menu-element a" ).click(function() {
+       menu_scroll();
+    });
+
+
+
+
 
 
 })

@@ -9,7 +9,23 @@ color: #808081;
 #wpadminbar{
 	display: none;
 }
+div.shameful_cover{
+	background-color: #FFF;
+	z-index: 9999;
+	width:auto;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
 
+}
+div.shameful_cover svg{
+	margin: auto;
+	vertical-align: middle;
+}
 main{
 	display: block;
 	max-width: 100vw;

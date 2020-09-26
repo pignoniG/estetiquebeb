@@ -192,6 +192,16 @@ function trattamenti_js(){
 }}
 add_action('wp_enqueue_scripts', 'trattamenti_js');
 
+function aftermath_js(){
+    
+    	
+	    wp_enqueue_script( 'aftermath-script', get_template_directory_uri() . '/js/aftermath.js', array(), '1', true );
+
+}
+add_action('wp_enqueue_scripts', 'aftermath_js');
+
+
+
 /**
  * Implement the Custom Header feature.
  */

@@ -93,7 +93,7 @@ function set_nav_h (){
 	else{
 
 		$("header#masthead").css('minHeight', 70);
-			console.log("cazzo");
+		
 
 	}
 
@@ -334,6 +334,21 @@ function preventDefaultForScrollKeys(e) {
         return false;
     }
 }
+
+function menu_scroll(){
+  // Remove the # from the hash, as different browsers may or may not include it
+    var hash = location.hash.replace('#','');
+    console.log("baubau");
+
+    if(hash != ''){
+
+       
+       // Clear the hash in the URL
+       // location.hash = '';   // delete front "//" if you want to change the address bar
+        $('html, body').animate({ scrollTop: $('#element'+hash).offset().top}, 1000);
+
+       }}
+
 
 function disableScroll() {
   if (window.addEventListener) // older FF

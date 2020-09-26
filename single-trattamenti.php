@@ -34,7 +34,11 @@ get_header();
 						echo $cd->cat_name;
 					}
 					echo " ";
-					echo get_the_title(); ?></h2>
+
+					if (get_field('trattamento_singolo')) {
+						echo get_the_title(); 
+					}
+					?></h2>
 
 
 					 
@@ -63,6 +67,9 @@ get_header();
 
 							$immagine_blocco = get_sub_field('immagine_blocco');
 							$testo_blocco = get_sub_field('testo_blocco');
+							$sanitize_title= filter_var (sanitize_text_field($sottotitolo_blocco), FILTER_SANITIZE_URL);
+
+							echo "<div id=element".$sanitize_title."></div>";
 						    
 
 						    if(($contatore_corpo % 2) == 0){ 
