@@ -202,6 +202,12 @@ h2.offerta_scaduta{
   transform:rotate(-10deg);
 }
 
+table .strikethrough:before {
+
+  border-top:1.5px solid;
+
+}
+
 
 	/* Corpo offerte e rattamenti  extra medium*/
 
