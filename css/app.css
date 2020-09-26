@@ -94,9 +94,14 @@ div.sovra_contenitore_corpo.left{
 	margin-left: -0.9375rem;
 }
 
-
 div.sovra_contenitore_corpo.right{
 	margin-right: -0.9375rem;
+}
+
+div.cell.immagine_copertina{
+	margin-right: -0.9375rem;
+	margin-left: -0.9375rem;
+	width: calc(100% + 1.875rem);
 }
 
 
@@ -105,8 +110,8 @@ div.contenitore_corpo.immagine div.green_frame{
 	border: solid 8px;
 	border-color: #B6C219;
 	padding-top: 50px;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 3rem;
+	padding-right: 3rem;
 	padding-bottom: 50px;
 
 	position: relative;
@@ -116,17 +121,22 @@ div.contenitore_corpo.immagine div.green_frame{
 
 div.contenitore_corpo.immagine div.green_frame img.immagine_blocco{
 	height: auto;
-	width: calc(100% + 240px);
-	max-width: calc(100% + 240px);
+	width: calc(100% + 4rem);
+	max-width: calc(100% + 4rem);
 	position: relative;
 	transition: left 1.5s,right 1.5s;
 }
 
 
 div.contenitore_corpo.immagine.left div.green_frame {
+	padding-right : 0px;
+	margin-right: 3rem;
 	left: -100vw;}
 
 div.contenitore_corpo.immagine.right div.green_frame {
+
+	padding-left: 0px;
+	margin-left: 3rem;
 	right: -100vw;}
 
 div.contenitore_corpo.immagine.left div.green_frame  img.immagine_blocco{
@@ -139,20 +149,20 @@ div.contenitore_corpo.immagine.right div.green_frame  img.immagine_blocco{
 
 
 div.contenitore_corpo.immagine.left div.green_frame.visible{
-	left: -6rem;
+	left: -3rem;
 }
 
 div.contenitore_corpo.immagine.right div.green_frame.visible{
-	right: -6rem;
+	right: -3rem;
 }
 
 
 div.contenitore_corpo.immagine.left div.green_frame.visible img.immagine_blocco{
-	left: -7rem;
+	left: -8px;
 }
 
 div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco{
-	right:  8rem;
+	right:  calc(4rem - 8px);
 }
 
 
@@ -710,17 +720,29 @@ h2.offerta_scaduta{
 			div.contenitore_corpo.immagine.right div.green_frame  img.immagine_blocco{
 				left: -100vw;
 				right: initial;}
+
+
+
 			
 			
 			div.contenitore_corpo.immagine.right div.green_frame.visible{
-				left: -6rem;
+				left: -3rem;
 				right: initial;
 			}
 			
 			div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco{
-				left: -7rem;
+				left: -8px;
 				right: initial;
 			}
+
+			div.contenitore_corpo.immagine.right div.green_frame {
+
+			padding-left: 3rem;
+			padding-right: 0;
+			margin-left: 0rem;
+			margin-right: 3rem;
+			right: -100vw;}
+
 
 			div.offerta_in_evidenza_container{
 				margin-top:90px;
@@ -952,7 +974,7 @@ h2.offerta_scaduta{
     	background-color: transparent;
     	min-width: 160px;
     	z-index: 1;
-    	margin-top: 70px;
+    	margin-top: 50px;
     	margin-left: auto;
 		margin-right: auto;
 		max-width: 75rem;

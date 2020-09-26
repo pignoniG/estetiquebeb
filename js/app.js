@@ -77,8 +77,8 @@ function set_nav_h (){
 	var min_header_height = $("ul.sub-menu-element").height() ;
 	//console.log(min_header_height,$(this));
 
-	if ( min_header_height + 200 < $(window).height()) {
-		min_header_height = min_header_height + 200;
+	if ( min_header_height + 100 < $(window).height()) {
+		min_header_height = min_header_height + 100;
 		
 
 	}
@@ -92,7 +92,7 @@ function set_nav_h (){
 	}
 	else{
 
-		$("header#masthead").css('minHeight', 70);
+		$("header#masthead").css('minHeight', "0");
 		
 
 	}
@@ -129,7 +129,7 @@ function toggle_menu_elements(){
 		if ($(this).parent("li").children("ul.sub-menu-element").is(":visible")) {
 
 			$("ul.sub-menu-element").hide();
-			$("header.site-header").css('minHeight', 70);
+			$("header.site-header").css('minHeight', 0);
 			$("header#masthead").removeClass("expanded");
 			$("header#masthead").removeClass("overflowing");
 			set_nav_h();
@@ -338,7 +338,7 @@ function preventDefaultForScrollKeys(e) {
 function menu_scroll(){
   // Remove the # from the hash, as different browsers may or may not include it
     var hash = location.hash.replace('#','');
- 
+
 
     if(hash != ''){
 
