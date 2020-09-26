@@ -263,15 +263,16 @@ h2.offerta_scaduta{
 			form.wpcf7-form p, span.wpcf7-form-control-wrap input, span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
 			margin:0;
 			}
-			span.wpcf7-form-control-wrap input, input.tnp-email{
-				padding-left: 15px;
-    			border: 3px solid #8080816b;
+			span.wpcf7-form-control-wrap input, input.tnp-email, .tnp-subscription input[type=email]{
+				padding-left: 15px!important;
+    			border: 3px solid #8080816b!important;
     			background: white;
     			border-radius: 10px;
-    			color: #8080819e;
+    			color: #8080819e!important;
     			height: 50px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
+    			font-size: 17px!important;
 			}
 			span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
 			margin-top: 10px;
@@ -280,35 +281,39 @@ h2.offerta_scaduta{
 			color:#808081;	
 			}
 			input.wpcf7-form-control.wpcf7-submit, input.tnp-submit{
-				margin-top: 50px;
-    			-ms-transform: translateY(-50%);
-    			top: 50%;
-    			left: 50%;
-    			position: relative;
-    			background: white;
-    			border: 3px solid #b6c219;
-    			width: 250px;
-    			height: 50px;
-    			color: #b6c219;
+				margin-top: 50px!important;
+    			-ms-transform: translateY(-50%)!important;
+    			top: 50%!important;
+    			left: 50%!important;
+    			position: relative!important;
+    			background-color: white!important;
+    			border: 3px solid #b6c219!important;
+    			width: 250px!important;
+    			height: 50px!important;
+    			color: #b6c219!important;
     			padding-bottom: 8px;
-    			-ms-transform: translate(-50%, -50%);
-    			transform: translate(-50%, -50%);
+    			-ms-transform: translate(-50%, -50%)!important;
+    			transform: translate(-50%, -50%)!important;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
     			letter-spacing: 1px;
-    			display: block;
+    			display: block!important;
     			text-transform: uppercase;
     			border-radius: 0px;
     			cursor:pointer;
+    			font-size: 17px!important;
+    			letter-spacing:1px;
 			}
 			input[type='checkbox']{
 			height: 13px!important;
 			}
-			input[type="email"]:focus, input[type="text"]:focus,input[type="tel"]:focus{
-			color:#b6c219;
+			input[type="email"]:focus, input[type="text"]:focus,input[type="tel"]:focus,
+			input.tnp-email:focus, .tnp-subscription input[type=email]:focus{
+			color:#b6c219!important;
 			border: 1px solid #b6c219;
-    		-webkit-box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1);
-    		box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1);
+    		-webkit-box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1)!important;
+    		box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1)!important;
+    		border-color: #b6c219!important;
 			}
 			div.contenitore_corpo.tabella {
 				text-align:center;
@@ -380,9 +385,9 @@ h2.offerta_scaduta{
 			}
 			div.offerta_in_evidenza_testo a:hover,
 			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover{
-				color: white;
-				background-color: #b6c219;
-				border-color: #b6c219;
+				color: white!important;
+				background-color: #b6c219!important;
+				border-color: #b6c219!important;
 			}
 
 			div.map_container{
@@ -491,15 +496,16 @@ h2.offerta_scaduta{
 			form.wpcf7-form p, span.wpcf7-form-control-wrap input, span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
 			margin:0;
 			}
-			span.wpcf7-form-control-wrap input, input.tnp-email{
-				padding-left: 15px;
-    			border: 3px solid #8080816b;
+			span.wpcf7-form-control-wrap input, input.tnp-email, .tnp-subscription input[type=email]{
+				padding-left: 15px!important;
+    			border: 3px solid #8080816b!important;
     			background: white;
     			border-radius: 10px;
-    			color: #8080819e;
+    			color: #8080819e!important;
     			height: 50px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
+    			font-size: 17px;
 			}
 			span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item{
 			margin-top: 10px;
@@ -508,35 +514,39 @@ h2.offerta_scaduta{
 			color:#808081;	
 			}
 			input.wpcf7-form-control.wpcf7-submit, input.tnp-submit{
-				margin-top: 50px;
-    			-ms-transform: translateY(-50%);
+				margin-top: 50px!important;
+    			-ms-transform: translateY(-50%)!important;
     			top: 50%;
     			left: 50%;
-    			position: relative;
-    			background: white;
-    			border: 3px solid #b6c219;
-    			width: 250px;
-    			height: 50px;
-    			color: #b6c219;
-    			padding-bottom: 8px;
-    			-ms-transform: translate(-50%, -50%);
-    			transform: translate(-50%, -50%);
+    			position: relative!important;
+    			background-color: white!important;
+    			border: 3px solid #b6c219!important;
+    			width: 250px!important;
+    			height: 50px!important;
+    			color: #b6c219!important;
+    			padding-bottom: 8px!important;
+    			-ms-transform: translate(-50%, -50%)!important;
+    			transform: translate(-50%, -50%)!important;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
     			letter-spacing: 1px;
-    			display: block;
+    			display: block!important;
     			text-transform: uppercase;
     			border-radius: 0px;
     			cursor:pointer;
+    			font-size:17px!important;
+    			letter-spacing: 1px;
 			}
 			input[type='checkbox']{
 			height: 13px!important;
 			}
-			input[type="email"]:focus, input[type="text"]:focus,input[type="tel"]:focus{
-			color:#b6c219;
-			border: 1px solid #b6c219;
-    		-webkit-box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1);
-    		box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1);
+			input[type="email"]:focus, input[type="text"]:focus,input[type="tel"]:focus, 
+			input.tnp-email:focus, .tnp-subscription input[type=email]:focus{
+			color:#b6c219!important;
+			border: 1px solid #b6c219!important;
+    		-webkit-box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1)!important;
+    		box-shadow: inset 0 1px 2px rgba(182, 194, 25, 1)!important;
+    		border-color: #b6c219!important;
 			}
 			div.contenitore_corpo.tabella {
 				text-align:center;
@@ -607,10 +617,12 @@ h2.offerta_scaduta{
     			letter-spacing: 1px;
 			}
 			div.offerta_in_evidenza_testo a:hover,
-			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover{
-				color: white;
-				background-color: #b6c219;
-				border-color: #b6c219;
+			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover,
+			.tnp-subscription input.tnp-submit:hover,
+			.tnp-field input[type="submit"]:hover{
+				color: white!important;
+				background-color: #b6c219!important;
+				border-color: #b6c219!important;
 			}
 
 			div.map_container{
@@ -743,10 +755,11 @@ h2.offerta_scaduta{
     			letter-spacing: 1px;
 			}
 			div.offerta_in_evidenza_testo a:hover,
-			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover{
-				color: white;
-				background-color: #b6c219;
-				border-color: #b6c219;
+			input.wpcf7-form-control.wpcf7-submit:hover, .tnp-subscription input.tnp-submit:hover,
+			.tnp-field input[type="submit"]:hover{
+				color: white!important;
+				background-color: #b6c219!important;
+				border-color: #b6c219!important;
 			}
 
 			div.map_container{
@@ -858,18 +871,17 @@ h2.offerta_scaduta{
 	}
 
 	nav.top_navigation > div > ul {
-		margin-top: 1.5rem;
-		height: 69px;
+		margin-top: 6px;
+    	height: 62px;
 	}
 
 	nav.top_navigation li.menu-element > a {
 		display: inline-block;
-
 		font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
   		font-style: normal;
   		font-weight: normal;
-  		font-size: 1.6rem;
-		
+  		font-size: 19px;
+   	    letter-spacing: 2px;
   		padding: 0;
   		padding-bottom: 0.0rem;
   		margin: 0.0rem 1.6rem;
@@ -893,7 +905,6 @@ h2.offerta_scaduta{
 	}
 
 	nav.top_navigation li.menu-element button.svg_icon {
-
     	border: none;
     	color: #000;
     	fill: #000;
@@ -904,6 +915,9 @@ h2.offerta_scaduta{
     	padding-right: 0px;
     	padding-left: 0px; 
 	}
+	nav.top_navigation li.menu-element button.svg_icon svg{
+		width: 24px;
+	}
 
 	#mobile_menu_toggle{
 		padding-right: 1rem;
@@ -912,7 +926,7 @@ h2.offerta_scaduta{
 
 	header#masthead nav.top_navigation li.menu-element > h3{
 		color: #B6C219;
-		font-size: 1.6rem;
+		font-size: 20px;
 	}
 
 
@@ -938,7 +952,7 @@ h2.offerta_scaduta{
     	background-color: transparent;
     	min-width: 160px;
     	z-index: 1;
-    	margin-top: 3rem;
+    	margin-top: 70px;
     	margin-left: auto;
 		margin-right: auto;
 		max-width: 75rem;
@@ -952,11 +966,17 @@ h2.offerta_scaduta{
 		padding-right: 1rem;
 		width: 25%;
 		min-width: 250px;
+		margin-bottom:20px;
 	}
 
 
 	nav.top_navigation ul.sub-menu-element li.menu-element a{
 		margin-left: 0px;
+    	font-size: 17px;
+    	letter-spacing: 0.5px;
+    	line-height: 17px;
+    	margin-bottom: 12px;
+    	display:block;
 	}
 	nav.top_navigation ul.sub-menu-element.nav-search{
 		position: absolute;
@@ -994,7 +1014,7 @@ h2.offerta_scaduta{
 
 		margin:  0px;
 		position: relative;
-		top: 9px;
+		top: 13px;
 
 	}
 
@@ -1030,7 +1050,7 @@ h2.offerta_scaduta{
 
 	nav.top_navigation li.menu-element.imp:hover > a , nav.top_navigation #mobile_menu_toggle:hover > a {
 		border-bottom: solid 3px transparent;
-		filter: saturate(0%) brightness(0%);
+		filter: saturate(0%) brightness(80%);
 	}
 
 
@@ -1050,10 +1070,12 @@ h2.offerta_scaduta{
 	}
 
 		nav.top_navigation > div > ul {
-			margin-top: 1.875rem;
+			margin-top: 3px;
 	
 		}
-		
+		nav.top_navigation ul.sub-menu-element{
+			margin-top: 30px;
+		}
 		
 		nav.top_navigation li.menu-element > a {
   			margin: 0.0rem 1rem;}
@@ -1096,18 +1118,19 @@ h2.offerta_scaduta{
 		header#masthead.mobile_open nav.top_navigation li.menu-element.noMobile{
 			display: list-item;
 			position: relative;
-			top: 5.5rem;
+			top: 40px;
 		}
 
 		header#masthead nav.top_navigation li#mobile_menu_toggle.menu-element.noLarge{
 			display: block;
 			float: right;
+			margin-top:16px;
 		}
 
 		header#masthead nav.top_navigation > div > ul {
 			width: 100vw;
 			text-align: left;
-			padding-left: 2.2rem;
+			padding-left: 5vw;
 		}
 
 		header#masthead.mobile_open {
@@ -1270,10 +1293,9 @@ header#masthead {
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     transition: all 0.2s linear;
-
     position: fixed !important;
     z-index: 999;    
-
+    box-shadow: 0px 0px 8px 1px #505050;
   }
 
 
