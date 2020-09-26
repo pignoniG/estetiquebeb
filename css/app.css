@@ -975,8 +975,10 @@ h2.offerta_scaduta{
     	font-size: 17px;
     	letter-spacing: 0.5px;
     	line-height: 17px;
-    	margin-bottom: 12px;
-    	display:block;
+    	margin-bottom: 3px;
+    	margin-top: 5px;
+    	display: block;
+    	padding-bottom: 5px;
 	}
 	nav.top_navigation ul.sub-menu-element.nav-search{
 		position: absolute;
@@ -1283,7 +1285,7 @@ header#masthead.hovers_top_slider.mobile_open nav.top_navigation li.menu-element
     }
 
 header#masthead {
-  	height: 5rem;
+  	height: 4rem;
     position: absolute!important;
     width: 100%;
     top: 0;
@@ -1295,7 +1297,6 @@ header#masthead {
     transition: all 0.2s linear;
     position: fixed !important;
     z-index: 999;    
-    box-shadow: 0px 0px 8px 1px #505050;
   }
 
 
