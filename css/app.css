@@ -165,6 +165,11 @@ div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco
 	right:  calc(4rem - 8px);
 }
 
+span.costo-singolo{
+	font-size: 25px;
+    line-height: 0px;
+    display: block;
+}
 
 
 div.countdownBox{
@@ -354,6 +359,7 @@ table .strikethrough:before {
     		div.contenitore_corpo.tabella table tbody{
     			border-collapse: collapse;
     			border:none;
+    			font-size: 20px;
     		}
 			div.contenitore_corpo.tabella table tbody tr{
 				background: white;
@@ -384,7 +390,7 @@ table .strikethrough:before {
     			padding: 20px;
     			padding-right: 50px;
 			}
-			div.offerta_in_evidenza_testo a{
+			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
@@ -397,9 +403,10 @@ table .strikethrough:before {
     			line-height: 18px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
-    			letter-spacing: 1px;
+    			letter-spacing: 2px;
+    			text-transform: uppercase;
 			}
-			div.offerta_in_evidenza_testo a:hover,
+			div.offerta_in_evidenza_testo a:hover, div.carousel-overlay a:hover,
 			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover{
 				color: white!important;
 				background-color: #b6c219!important;
@@ -623,22 +630,23 @@ table .strikethrough:before {
     			padding: 20px;
     			padding-right: 50px;
 			}
-			div.offerta_in_evidenza_testo a{
+			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
     			background: transparent;
     			border: 3px solid #b6c219;
-    			width: 90%;
+    			width: 250px;
     			height: 50px;
     			color: #b6c219;
     			padding-bottom: 8px;
     			line-height: 18px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
-    			letter-spacing: 1px;
+    			letter-spacing: 2px;
+    			text-transform: uppercase;
 			}
-			div.offerta_in_evidenza_testo a:hover,
+			div.offerta_in_evidenza_testo a:hover, div.carousel-overlay a:hover,
 			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover,
 			.tnp-subscription input.tnp-submit:hover,
 			.tnp-field input[type="submit"]:hover{
@@ -1098,6 +1106,10 @@ table .strikethrough:before {
 	/* navbar extra medium*/
 
 	@media only screen and (min-width: 63.9375em)  {
+	nav.top_navigation{
+			    margin-left: 2vw;
+    			margin-right: 2vw;
+		}
 	}
 
 /* navbar medium*/
@@ -1106,6 +1118,10 @@ table .strikethrough:before {
 			nav.top_navigation li.menu-element.site-title a.site-title span.noMobile{ 
 		display: none;
 	}
+	nav.top_navigation{
+			    margin-left: 4vw;
+    			margin-right: 4vw;
+		}
 
 		nav.top_navigation > div > ul {
 			margin-top: 3px;
@@ -1169,6 +1185,8 @@ table .strikethrough:before {
 			width: 100vw;
 			text-align: left;
 			padding-left: 5vw;
+			padding-right: 5vw;
+
 		}
 
 		header#masthead.mobile_open {
@@ -1350,18 +1368,20 @@ header#masthead {
 /* home inizio */
 
 	/* home  general*/
-
+	div.carousel-overlay a{
+		margin-left: 7vw;
+    	margin-top: 40px;
+	}
 
 	div.carousel-cell h4.titolo.corsivo{
 		position: relative;
-		color: #838384;
-
-		padding-left: 10vw;
-		color: #838384;
-		padding-top: 10vh;
-		padding-right: 30vw;
-		font-size: 5rem;
-
+    	color: #838384;
+    	padding-left: 7vw;
+    	color: #838384;
+    	padding-top: 10vh;
+    	padding-right: 45vw;
+    	font-size: 3rem;
+    	font-weight: 500;
 	}
 
 
@@ -1400,23 +1420,30 @@ header#masthead {
 	/* home  extra medium*/
 
 		@media only screen and (min-width: 63.9375em)  {
+			div.carousel-cell h4.titolo.corsivo {
+    				font-size: 45px;
+				}
 		}
 
 	/* home  medium*/
 
 		@media only screen and (max-width: 63.9375em)  {
+		div.carousel-cell h4.titolo.corsivo {
+    				font-size: 35px;
+				}
 		}
 
 	/* home  mobile*/
 
 		@media screen and (max-width: 39.9375em) {
 
+
 			div.carousel-cell div.carousel-overlay {
 				position: absolute;
 				top: 50px;
 				bottom: 50px;
-				left: 50px;
-				right: 50px;
+				left: 8vw;
+    			right: 8vw;
 				background-image: none!important;
 				background: #ffffffe5;
 				backdrop-filter: blur(10px);
@@ -1427,7 +1454,23 @@ header#masthead {
 				background-size: cover;
 			
 			}
+			div.carousel-cell h4.titolo.corsivo {
+    				padding: 20px;
+    				padding-top: 40px;
+    				font-size: 24px;
+    				text-align: center;
+				}
 
+			div.carousel-overlay a{
+				    left: 50%;
+    				transform: translate(-50%);
+    				margin-left:0;
+			}
+
+			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
+				width: 230px;
+				font-size: 14px;
+			}
 		}
 
 	/* home  extra mobile*/
