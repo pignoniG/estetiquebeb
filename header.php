@@ -170,6 +170,7 @@
 
 											$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');
 											$sanitize_title= filter_var (sanitize_text_field($sottotitolo_blocco), FILTER_SANITIZE_URL);
+                      $sanitize_title = preg_replace("/[^A-Za-z0-9 ]/", '', $sanitize_title);
 
 											$ancor_link = get_post_permalink($post->ID).'#'.$sanitize_title;
 

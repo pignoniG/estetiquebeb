@@ -68,6 +68,7 @@ get_header();
 							$immagine_blocco = get_sub_field('immagine_blocco');
 							$testo_blocco = get_sub_field('testo_blocco');
 							$sanitize_title= filter_var (sanitize_text_field($sottotitolo_blocco), FILTER_SANITIZE_URL);
+							$sanitize_title = preg_replace("/[^A-Za-z0-9 ]/", '', $sanitize_title);
 
 							echo "<div id=element".$sanitize_title."></div>";
 						    
