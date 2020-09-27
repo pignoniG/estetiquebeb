@@ -184,6 +184,20 @@ function offerte_js(){
 }}
 add_action('wp_enqueue_scripts', 'offerte_js');
 
+
+
+function flickity_js(){
+    if ( is_front_page() || is_home()  ){
+
+
+    	wp_enqueue_script( 'js-flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array(), '2', true );
+    	wp_enqueue_style( 'css-flickity',  get_template_directory_uri() . '/css/flickity.css', array(), '2', 'screen' );
+    	wp_enqueue_script( 'home-script', get_template_directory_uri() . '/js/home.js', array(), '1', true );
+    }
+}
+add_action('wp_enqueue_scripts', 'flickity_js');
+
+
 function trattamenti_js(){
     if (is_singular( 'trattamenti' )){
     	

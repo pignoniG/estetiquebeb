@@ -4,7 +4,7 @@ body{
 font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
 font-weight: 500;
 color: #808081;
-
+padding-top: 67px;
 }
 #wpadminbar{
 	display: none;
@@ -445,6 +445,12 @@ table .strikethrough:before {
 	/* Corpo offerte e rattamenti  medium*/
 
 		@media only screen and (max-width: 63.9375em)  {
+
+			body{
+				padding-top: 65px;
+			}
+			
+
 			h3.titolo{
 				font-size:32px;
 				text-align:center;
@@ -679,6 +685,7 @@ table .strikethrough:before {
 	/* Corpo offerte e rattamenti  mobile*/
 
 		@media screen and (max-width: 39.9375em) {
+
 			div.contenitore_corpo.tabella table thead tr th, div.contenitore_corpo.tabella table tbody tr td{
    			 padding-left: 15px;
     		 padding-right: 10px;
@@ -1340,6 +1347,95 @@ header#masthead {
 
 
 
+/* home inizio */
+
+	/* home  general*/
+
+
+	div.carousel-cell h4.titolo.corsivo{
+		position: relative;
+		color: #838384;
+
+		padding-left: 10vw;
+		color: #838384;
+		padding-top: 10vh;
+		padding-right: 30vw;
+		font-size: 5rem;
+
+	}
+
+
+	div.carousel-cell{
+		width: 100vw;
+		height: calc(80vh - 50px);
+		position: relative;
+	}
+	
+	div.carousel-cell div.carousel-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	
+		background-position-x: right;
+		background-position-y: top;
+		background-size: cover;
+	
+	}
+	
+	div.carousel-cell div.carousel-image {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		background-position-x: right;
+		background-position-y: top;
+		
+	}
+
+
+	/* home  extra medium*/
+
+		@media only screen and (min-width: 63.9375em)  {
+		}
+
+	/* home  medium*/
+
+		@media only screen and (max-width: 63.9375em)  {
+		}
+
+	/* home  mobile*/
+
+		@media screen and (max-width: 39.9375em) {
+
+			div.carousel-cell div.carousel-overlay {
+				position: absolute;
+				top: 50px;
+				bottom: 50px;
+				left: 50px;
+				right: 50px;
+				background-image: none!important;
+				background: #ffffffe5;
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+			
+				background-position-x: right;
+				background-position-y: top;
+				background-size: cover;
+			
+			}
+
+		}
+
+	/* home  extra mobile*/
+		@media screen and (max-width: 28.125em) {
+		}
+
+
+/* home fine */
 
 
 
