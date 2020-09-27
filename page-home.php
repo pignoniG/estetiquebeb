@@ -45,7 +45,7 @@ get_header();
 				    	$overlay__image_url = get_template_directory_uri() . '/inc/filigrana_hero.svg';
 				    	$content_image_caption = get_sub_field('copy_carosello');
 				    	$content_image_button_caption = get_sub_field('copy_bottone');
-				    	$content_image_button_link = get_sub_field('link_bottone');
+				    	$content_image_button_link = get_sub_field('link_bottone')['url'];
 				    	
 				    	
 					?>
@@ -53,7 +53,7 @@ get_header();
 					 <div class="carousel-cell">
 					 	<div class="carousel-image" style="background-image: url('<?php echo($content_image_url); ?>');"></div>
 					 	 <div class="carousel-overlay " style="background-image: url('<?php echo($overlay__image_url); ?>');" >
-					 	 	<h4 class="titolo corsivo">Offerta a tempo</h4>
+					 	 	<h4 class="titolo corsivo"><?php echo $content_image_caption; ?></h4>
 
 					 	 		<a href="<?php echo($content_image_button_link); ?>" class="button"><?php echo($content_image_button_caption); ?></a>
 					 	 </div>
