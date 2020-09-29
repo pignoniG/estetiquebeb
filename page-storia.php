@@ -32,8 +32,10 @@ get_header();
 					<h2 class="sottotitolo maiuscolo"> <?php the_field('sottotitolo'); ?></h2>
 
 
+				</div>
 
-
+			</div>
+			
 				<?php
 				// Check rows exists.
 				if( have_rows('post_body') ):

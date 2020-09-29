@@ -1415,7 +1415,22 @@ header#masthead {
 		background-position-y: top;
 		
 	}
+	div.contenitore_trattamenti_piu_richiesti{
+		margin-top: 3rem;
 
+	}
+
+	div.contenitore_trattamenti_piu_richiesti div.immagine_trattamento{
+		width: 100%;
+		padding-top: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+
+	div.contenitore_trattamenti_piu_richiesti.n-1{
+		position: relative; 
+		margin-top: 0rem;
+	}
 
 	/* home  extra medium*/
 

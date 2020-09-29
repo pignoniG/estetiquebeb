@@ -74,14 +74,174 @@ get_header();
 				<?php endif; ?>
 
 
+
+		<div class="grid-container">
+
+				<?php
+				// Check rows exists.
+				if( have_rows('post_body') ):
+
+					$contatore_corpo=0;
+				
+				    // Loop through rows.
+				    while( have_rows('post_body') ) : the_row();
+
+				    	$titolo_blocco = get_sub_field('titolo_blocco');
+				    	$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');
+				    	$selettore_tabella = get_sub_field('selettore_tabella');
+
+						if( get_sub_field('selettore_tabella') == 'Immagine e testo' ) {
+
+							$immagine_blocco = get_sub_field('immagine_blocco');
+							$testo_blocco = get_sub_field('testo_blocco');
+						    
+						    if(($contatore_corpo % 2) == 0){ 
+						    	
+						    	include(locate_template('template-parts/body_left.php'));
+						    }
+						    else{
+						    	include(locate_template('template-parts/body_right.php'));
+						    }
+
+						    $contatore_corpo++;  
+
+						}
+						if( get_sub_field('selettore_tabella') == 'Tabella' ) { 
+							$tabella_blocco = get_sub_field('tabella_blocco');
+
+						   include(locate_template('template-parts/body_tabella.php'));
+						}
+
+				        // Do something...
+				
+				    // End loop.
+				    endwhile;
+				
+				// No value.
+				else :
+				    // Do something...
+				endif;
+
+				?>
+
+	</div>
+
+
+
 		<div class="grid-container">
 			<div class="grid-x">
-
-
-
-
+			<div class="cell">
+				<h4 class="titolo corsivo">Cura il corpo e rilassati al meglio</h4>	
+				<h5 class="sottotitolo maiuscolo" >TRATTAMENTI PIU RICHIESTI</h5>	
 			</div>
-		</div>
+				
+
+
+
+
+
+				<?php
+				// Check rows exists.
+				if( have_rows('trattamenti_piu_richiesti') ):
+					$contatore_trattamenti_piu_richiesti = 0;
+
+				
+				
+				    // Loop through rows.
+				    while( have_rows('trattamenti_piu_richiesti') ) : the_row();
+				    	
+
+
+				    	$nome_trattamento = get_sub_field('nome_trattamento');
+				    	$link_trattamento = get_sub_field('link_trattamento')['url'];
+				    	$immagine_trattamento = esc_url(get_sub_field('immagine_trattamento')['url']);
+
+				    	?>
+
+				    		<div class="cell small-12 medium-4 large-4 contenitore_trattamenti_piu_richiesti <?php echo "n-".$contatore_trattamenti_piu_richiesti; ?>" >
+				    			<a href='<?php $link_trattamento; ?>'>
+
+				    			<div class="immagine_trattamento" style="background-image: url('<?php echo($immagine_trattamento); ?>');" ></div> 
+				    		
+
+								<h5 class="sottotitolo maiuscolo" > <?php echo $sottotitolo_blocco; ?> </h5>
+								</a>	
+
+
+
+				    			
+				    		</div> 
+				    	<?php
+				    	$contatore_trattamenti_piu_richiesti++;
+
+
+
+
+				        // Do something...
+				
+				    // End loop.
+				    endwhile;
+				
+				// No value.
+				else :
+				    // Do something...
+				endif;
+
+				?>
+
+
+
+	</div>		
+	</div>
+
+
+		<div class="grid-container">
+
+				<?php
+				// Check rows exists.
+				if( have_rows('post_body_social') ):
+
+		
+				
+				    // Loop through rows.
+				    while( have_rows('post_body_social') ) : the_row();
+
+				    	$titolo_blocco = get_sub_field('titolo_blocco');
+				    	$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');
+				    	
+
+						
+
+						$immagine_blocco = get_sub_field('immagine_blocco');
+						$testo_blocco = get_sub_field('testo_blocco');
+						
+						if(($contatore_corpo % 2) == 0){ 
+							
+							include(locate_template('template-parts/body_left.php'));
+						}
+						else{
+							include(locate_template('template-parts/body_right.php'));
+						}
+
+						$contatore_corpo++;  
+
+						
+						
+
+				        // Do something...
+				
+				    // End loop.
+				    endwhile;
+				
+				// No value.
+				else :
+				    // Do something...
+				endif;
+
+				?>
+
+	</div>
+
 
 	</main><!-- #main -->
 
