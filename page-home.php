@@ -129,8 +129,8 @@ get_header();
 
 
 		<div class="grid-container">
-			<div class="grid-x">
-			<div class="cell">
+			<div class="grid-x trattamenti_piu_richiesti-container">
+			<div class="cell trattamenti_piu_richiesti-text">
 				<h4 class="titolo corsivo">Cura il corpo e rilassati al meglio</h4>	
 				<h5 class="sottotitolo maiuscolo" >TRATTAMENTI PIU RICHIESTI</h5>	
 			</div>
