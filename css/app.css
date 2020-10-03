@@ -172,7 +172,9 @@ div.contenitore_corpo.immagine.left div.green_frame.visible img.immagine_blocco{
 div.contenitore_corpo.immagine.right div.green_frame.visible img.immagine_blocco{
 	right:  calc(4rem - 8px);
 }
-
+div.offerta_scaduta_show{
+	display: none;
+}
 span.costo-singolo{
 	font-size: 25px;
     line-height: 0px;
