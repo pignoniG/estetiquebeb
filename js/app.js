@@ -51,6 +51,67 @@ $(document).ready(function(){
 		};
 	});
 
+	var mymap = L.map('map').fitBounds([
+		[45.653474, 13.772225],
+    [45.650637, 13.772166]
+    
+]);
+	var bebIcon = L.icon({
+    iconUrl: templateUrl+'/inc/pinMap.png',
+
+    iconSize:     [50 , 73], // size of the icon
+    iconAnchor:   [25,73], // point of the icon which will correspond to marker's location
+ 
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: '',
+    attributionControl: false,
+    zoomControl: true,
+    maxZoom: 16,
+    minZoom: 16,
+    id: 'mapbox/light-v10',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiZ21hYyIsImEiOiJxNzVZOXNNIn0.1sj4ogXLAR1h0XJVwLdbiA'
+}).addTo(mymap);
+
+	
+	var icon1 = L.marker([45.652936, 13.772201], {icon: bebIcon}).addTo(mymap).bindPopup("Via Roma 20/A");
+	var icon2 = L.marker([45.650637, 13.772166], {icon: bebIcon}).addTo(mymap).bindPopup("Via San Nicolò 22/B");
+
+
+        icon1.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        icon1.on('mouseout', function (e) {
+            this.closePopup();
+        });
+
+
+        icon2.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        icon2.on('mouseout', function (e) {
+            this.closePopup();
+        });
+
+        icon1.addEventListener('click', function () {
+            window.location.href="https://goo.gl/maps/M6zH7aBdrUAgJ9HW8";
+        });
+
+        icon2.addEventListener('click', function () {
+             window.location.href="https://goo.gl/maps/bUHDWnGkeVS2dtAJ6";
+        });
+
+
+         
+
 
   } //fine document ready 
 ); 

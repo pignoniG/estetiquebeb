@@ -153,6 +153,8 @@ function estetiquebeb_scripts() {
 
 	wp_enqueue_style( 'estetiquebeb-style', get_stylesheet_uri(), array(), _S_VERSION );
 
+	wp_enqueue_style( 'estetiquebeb-leaflet-apa', get_template_directory_uri() . '/js/leaflet/leaflet.css' );
+
 	wp_enqueue_style( 'estetiquebeb-style-apa', get_template_directory_uri() . '/css/app.css' );
 
 	wp_style_add_data( 'estetiquebeb-style', 'rtl', 'replace' );
@@ -166,6 +168,9 @@ function estetiquebeb_scripts() {
 	wp_enqueue_script( 'estetiquebeb-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'estetiquebeb-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_script( 'estetiquebeb-leaflet-app', get_template_directory_uri() . '/js/leaflet/leaflet.js', array(), _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

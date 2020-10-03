@@ -60,16 +60,19 @@ text-rendering: optimizeLegibility;
 
 div.cell.map_container{
 	overflow: hidden;
-	filter: grayscale(100%);
+	/*filter: grayscale(100%);*/
 
 }
-div.cell.map_container iframe{
+div.cell.map_container #map{
 	width: 100vw;
 	height: 35vw;
 	border: transparent;
 	position: relative;
 	
 
+}
+.leaflet-control-zoom{
+	display: none;
 }
 /*generali fine*/
 
@@ -844,7 +847,7 @@ table .strikethrough:before {
 			.logo_container img{
 				width:17vw;
 			}
-			div.cell.map_container iframe {
+			div.cell.map_container #map {
 			    height: 60vh;
 			}
 		}
@@ -902,7 +905,7 @@ table .strikethrough:before {
 			.indirizzi, .orari {
 			    padding-left: 3vw;
 			}
-			div.cell.map_container iframe {
+			div.cell.map_container #map{
 			    height: 60vh;
 			}
 		}
@@ -1467,6 +1470,7 @@ header#masthead {
     	color: #808081;
     	letter-spacing: 2px;
 	}
+	
 
 	/* home  extra medium*/
 
@@ -1554,6 +1558,7 @@ header#masthead {
     				text-align: center;
 				}
 		}
+
 
 
 /* home fine */

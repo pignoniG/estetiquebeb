@@ -62,7 +62,10 @@
 				</div>
 
 				<div class="cell map_container">
-					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JGJBNKxMdAoqopOGXCjaift5A17FkviY" ></iframe>
+					 <div id="map">
+					 	
+					 </div>
+					<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JGJBNKxMdAoqopOGXCjaift5A17FkviY" ></iframe> -->
 				</div>
 
 				<div class="cell testo_footer indirizzi small-12 medium-6 large-6">
