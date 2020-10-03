@@ -95,7 +95,7 @@ get_header();
 					</div>
 					</div>
 
-					<div class="cell" id="offerta_scaduta" style="<?php if ($adesso  < $scadenza) { echo "display: none;"; }?>">
+					<div class="cell offerta_scaduta_show" style="<?php if ($adesso  < $scadenza) { echo "display: none;"; }?>">
 
 						<h2 class="offerta_scaduta">Questa offerta è scaduta.</h2>
 					</div>
@@ -175,7 +175,7 @@ get_header();
 
 
 
-		<div class="grid-x">
+		<div class="grid-x offerta_scaduta_hide">
 			<div class="cell small-12 medium-8 large-6 large-offset-3 medium-offset-2 contact-container">
 				<h4 class="titolo corsivo"> Contattaci</h4>
 				<h5 class="sottotitolo maiuscolo">PRENOTA L’OFFERTA</h5>

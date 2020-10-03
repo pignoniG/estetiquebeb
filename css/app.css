@@ -91,6 +91,7 @@ div.sovra_contenitore_corpo{
 
 }
 
+
 div.sovra_contenitore_corpo.left{
 	margin-left: -0.9375rem;
 	    align-items: center;
@@ -149,6 +150,10 @@ div.contenitore_corpo.immagine.right div.green_frame  img.immagine_blocco{
 	right: -100vw;}
 
 
+div.contenitore_corpo.left.form{
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
 
 
 div.contenitore_corpo.immagine.left div.green_frame.visible{

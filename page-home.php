@@ -75,6 +75,33 @@ get_header();
 
 
 
+
+	<div class="grid-container">
+
+
+		<div class="grid-x sovra_contenitore_corpo left">
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo left form ">
+		 
+		<?php echo do_shortcode('[contact-form-7 id="252" title="Seduta Gratuita"]'); ?>	
+
+	</div>
+	
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo left ">
+	
+		<h4 class="titolo corsivo">Epilazione laser</h4>
+				<h5 class="sottotitolo maiuscolo">PRIMA SEDUTA GRATUITA*</h5>
+				<p>Compila il form e sarai contattato telefonicamente dal nostro staff, insieme sceglieremo la data della tua seduta gratuita.
+*Solo nuovi clienti epilazione. (viso, inguine, ascelle, petto, addome)</p>
+	
+	</div>
+</div>
+
+
+
+	
+
+	
+	</div>
 		<div class="grid-container">
 
 				<?php

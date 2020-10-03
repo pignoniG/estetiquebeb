@@ -26,7 +26,9 @@ function hasScrolledOfferte() {
 
         if(total<=0){
 
-            $("#offerta_scaduta").show();
+            $("offerta_scaduta_show").show();
+            $("offerta_scaduta_hide").hide();
+           
 
         }
     }
