@@ -95,7 +95,7 @@ get_header();
 					</div>
 					</div>
 
-					<div class="cell offerta_scaduta_show" style="<?php if ($adesso  < $scadenza) { echo "display: none;"; }?>">
+					<div class="cell offerta_scaduta_show <?php if ($adesso  >= $scadenza) { echo "countComplete"; }?>">
 
 						<h2 class="offerta_scaduta">Questa offerta è scaduta.</h2>
 					</div>

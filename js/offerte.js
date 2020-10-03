@@ -25,6 +25,7 @@ function hasScrolledOfferte() {
     
 
         if(total<=0){
+            console.log("offerta_scaduta")
 
             $(".offerta_scaduta_show").show();
             $(".offerta_scaduta_hide").hide();
@@ -63,6 +64,12 @@ jQuery(document).ready(function () {
             $("#countdownOfferta_ore").TimeCircles({ time: { Hours: { show: true } }});
             $("#countdownOfferta_minuti").TimeCircles({ time: { Minutes: { show: true } }})
             $("#countdownOfferta_secondi").TimeCircles({ time: {  Seconds: { show: true } }}).addListener(countdownComplete);;
+
+            if ( $(".offerta_scaduta_show").hasClass("countComplete")) {
+                countdownComplete(0,0,0);
+
+            };
+
 })
 
 
