@@ -181,7 +181,6 @@ div.offerta_scaduta_show{
 span.costo-singolo{
 	font-size: 25px;
     line-height: 0px;
-    display: block;
 }
 
 
@@ -714,7 +713,9 @@ table .strikethrough:before {
     		 padding-right: 10px;
     		 vertical-align: bottom;
 			}
-			div.contenitore_corpo.left{
+			div.contenitore_corpo.left,
+			div.contenitore_corpo.right
+			{
 				margin-top:50px;
 			}
 			div.contenitore_corpo.testo{
@@ -1298,7 +1299,7 @@ header#masthead.expanded{
 }
 header#masthead div.nav_backdrop{
 	background-color: #ffffff;
-	box-shadow: 0px 0px 8px 1px #505050;
+	box-shadow: 0px 0px 8px 1px #50505038;
 
 }
 
@@ -1516,8 +1517,8 @@ header#masthead {
 
 			div.carousel-cell div.carousel-overlay {
 				position: absolute;
-				top: 50px;
-				bottom: 50px;
+				top: 9vh;
+				bottom: 9vh;
 				left: 8vw;
     			right: 8vw;
 				background-image: none!important;
@@ -1544,7 +1545,7 @@ header#masthead {
 			}
 
 			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
-				width: 230px;
+				width: 250px;
 				font-size: 14px;
 			}
 		}
