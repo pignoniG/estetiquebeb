@@ -75,6 +75,9 @@ div.cell.map_container #map{
 	/*display: none;*/
 
 }
+div.leaflet-pane.leaflet-marker-pane img.leaflet-marker-icon:hover{
+	filter: grayscale();
+}
 /*generali fine/*
 
 
@@ -154,10 +157,17 @@ div.contenitore_corpo.immagine.right div.green_frame  img.immagine_blocco{
 
 
 div.contenitore_corpo.left.form{
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 8rem!important;
+	padding-right: 6rem!important;
 }
 
+div.sovra_contenitore_corpo.left.form-container{
+	align-items: unset;
+}
+div.sovra_contenitore_corpo.left.form-container div.contenitore_corpo.left{
+	padding-left: 6rem;
+	padding-right: 8rem;
+}
 
 div.contenitore_corpo.immagine.left div.green_frame.visible{
 	left: -3rem;
@@ -458,6 +468,14 @@ table .strikethrough:before {
 			.logo_container img{
 				width:10vw;
 			}
+			div.sovra_contenitore_corpo.left.form-container div.contenitore_corpo.left{
+				padding-left: 4rem;
+				padding-right: 6rem;
+			}
+			div.contenitore_corpo.left.form{
+				padding-left: 6rem!important;
+				padding-right: 4rem!important;
+			}
 		}
 
 
@@ -702,6 +720,15 @@ table .strikethrough:before {
 			.logo_container img{
 				width:14vw;
 			}
+
+			div.sovra_contenitore_corpo.left.form-container div.contenitore_corpo.left{
+				padding-left: 2rem;
+				padding-right: 4rem;
+			}
+			div.contenitore_corpo.left.form{
+				padding-left: 4rem!important;
+				padding-right: 2rem!important;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  mobile*/
@@ -851,6 +878,14 @@ table .strikethrough:before {
 			div.cell.map_container #map {
 			    height: 60vh;
 			}
+			div.sovra_contenitore_corpo.left.form-container div.contenitore_corpo.left{
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+			div.contenitore_corpo.left.form{
+				padding-left: 1rem!important;
+				padding-right: 1rem!important;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  extra mobile*/
@@ -908,6 +943,17 @@ table .strikethrough:before {
 			}
 			div.cell.map_container #map{
 			    height: 60vh;
+			}
+			div.sovra_contenitore_corpo.left.form-container div.contenitore_corpo.left{
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+			div.sovra_contenitore_corpo.left.form-container div.contenitore_corpo.left p{
+				font-size:18px;
+			}
+			div.contenitore_corpo.left.form{
+				padding-left: 2rem!important;
+				padding-right: 2rem!important;
 			}
 		}
 
