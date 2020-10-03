@@ -81,6 +81,8 @@ $(document).ready(function(){
     accessToken: 'pk.eyJ1IjoiZ21hYyIsImEiOiJxNzVZOXNNIn0.1sj4ogXLAR1h0XJVwLdbiA'
 }).addTo(mymap);
 
+	 mymap.scrollWheelZoom.disable();
+
 	
 	var icon1 = L.marker([45.652936, 13.772201], {icon: bebIcon}).addTo(mymap).bindPopup("Via Roma 20/A");
 	var icon2 = L.marker([45.650637, 13.772154], {icon: bebIcon}).addTo(mymap).bindPopup("Via San Nicolò 22/B");
