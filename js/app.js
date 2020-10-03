@@ -73,8 +73,8 @@ $(document).ready(function(){
     attribution: '',
     attributionControl: false,
     zoomControl: true,
-    maxZoom: 16,
-    minZoom: 16,
+    maxZoom: 18,
+    minZoom: 14,
     id: 'mapbox/light-v10',
     tileSize: 512,
     zoomOffset: -1,
@@ -83,7 +83,7 @@ $(document).ready(function(){
 
 	
 	var icon1 = L.marker([45.652936, 13.772201], {icon: bebIcon}).addTo(mymap).bindPopup("Via Roma 20/A");
-	var icon2 = L.marker([45.650637, 13.772166], {icon: bebIcon}).addTo(mymap).bindPopup("Via San Nicolò 22/B");
+	var icon2 = L.marker([45.650637, 13.772154], {icon: bebIcon}).addTo(mymap).bindPopup("Via San Nicolò 22/B");
 
 
         icon1.on('mouseover', function (e) {
@@ -101,11 +101,11 @@ $(document).ready(function(){
             this.closePopup();
         });
 
-        icon1.addEventListener('click', function () {
+        icon2.addEventListener('click', function () {
             window.location.href="https://goo.gl/maps/M6zH7aBdrUAgJ9HW8";
         });
 
-        icon2.addEventListener('click', function () {
+        icon1.addEventListener('click', function () {
              window.location.href="https://goo.gl/maps/bUHDWnGkeVS2dtAJ6";
         });
 
