@@ -240,7 +240,9 @@ table .strikethrough:before {
   border-top:1.5px solid;
 
 }
-
+.indirizzi a{
+				color: #808081;
+			}
 
 	/* Corpo offerte e rattamenti  extra medium*/
 
@@ -452,6 +454,9 @@ table .strikethrough:before {
 				font-size: 22px;
 				padding-left: 0vw;
 			}
+			.indirizzi a{
+				color: #808081;
+			}
 
 			.newsletter_container{
 				margin-top:70px;
@@ -481,6 +486,19 @@ table .strikethrough:before {
 			div.contenitore_corpo.left.form{
 				padding-left: 6rem!important;
 				padding-right: 4rem!important;
+			}
+
+			div.testo_footer h3.titolo, .orari h3.titolo{
+				font-size: 32px;
+			}
+
+			div.testo_footer h2.sottotitolo.maiuscolo, .orari h2.sottotitolo.maiuscolo{
+				font-size: 30px;
+			}
+
+			div.testo_footer, .orari{
+				font-size: 20px;
+				padding-left: 4vw;
 			}
 		}
 
@@ -735,6 +753,16 @@ table .strikethrough:before {
 				padding-left: 4rem!important;
 				padding-right: 2rem!important;
 			}
+			div.testo_footer h3.titolo, .orari h3.titolo{
+				    font-size: 3.2vw;
+			}
+			div.testo_footer h2.sottotitolo.maiuscolo, .orari h2.sottotitolo.maiuscolo{
+				font-size: 2.8vw;
+			}
+			div.testo_footer, .orari{
+				font-size: 2vw;
+				padding-left: 4vw;
+			}
 		}
 
 	/* Corpo offerte e rattamenti  mobile*/
@@ -861,7 +889,7 @@ table .strikethrough:before {
 			.indirizzi, .orari, .indirizzi h3, .orari h3, .indirizzi h2, .orari h2{
 				text-align: left!important;
 			}
-			.orari{
+			.orari, .indirizzi{
 				margin-top:30px;
 			}
 			.newsletter_container{
@@ -892,6 +920,16 @@ table .strikethrough:before {
 				padding-left: 1rem!important;
 				padding-right: 1rem!important;
 			}
+			div.testo_footer h3.titolo, .orari h3.titolo{
+				    font-size: 32px;
+			}
+			div.testo_footer h2.sottotitolo.maiuscolo, .orari h2.sottotitolo.maiuscolo{
+				font-size: 30px;
+			}
+			div.testo_footer, .orari{
+				font-size: 20px;
+			}
+			
 		}
 
 	/* Corpo offerte e rattamenti  extra mobile*/
@@ -1569,8 +1607,10 @@ header#masthead {
 
 			div.carousel-cell div.carousel-overlay {
 				position: absolute;
-				top: 9vh;
-				bottom: 9vh;
+			    left: 8vw;
+			    top: 50%;
+    			transform: translate(0, -50%);
+			    height: min-content;
 				left: 8vw;
     			right: 8vw;
 				background-image: none!important;
@@ -1594,6 +1634,7 @@ header#masthead {
 				    left: 50%;
     				transform: translate(-50%);
     				margin-left:0;
+    				margin-top: 10px;
 			}
 
 			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
