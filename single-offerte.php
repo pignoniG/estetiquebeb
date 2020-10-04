@@ -190,7 +190,7 @@ get_header();
 		</div>
 
 
-			<div class="grid-container">
+			<div class="grid-container clessidra">
 
 				<?php
 				// Check rows exists.
@@ -199,7 +199,7 @@ get_header();
 		
 				
 				    // Loop through rows.
-				    while( have_rows('post_body_social') ) : the_row();
+				    while( have_rows('post_body_clessidra') ) : the_row();
 
 				    	$titolo_blocco = get_sub_field('titolo_blocco');
 				    	$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');

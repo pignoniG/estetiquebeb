@@ -129,6 +129,12 @@ div.contenitore_corpo.immagine div.green_frame{
 	
 }
 
+
+div.grid-container.clessidra div.contenitore_corpo.immagine div.green_frame{
+border-color: transparent;
+	
+}
+
 div.contenitore_corpo.immagine div.green_frame img.immagine_blocco{
 	height: auto;
 	width: calc(100% + 4rem);
@@ -444,7 +450,7 @@ table .strikethrough:before {
 			}
 			.indirizzi, .orari {
 				font-size: 22px;
-				padding-left: 15vw;
+				padding-left: 0vw;
 			}
 
 			.newsletter_container{
@@ -696,7 +702,7 @@ table .strikethrough:before {
 			}
 			.indirizzi, .orari {
 				font-size: 20px;
-				padding-left: 11vw;
+				padding-left: 0vw;
 			}
 
 			.newsletter_container{
