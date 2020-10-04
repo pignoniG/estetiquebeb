@@ -26,6 +26,7 @@ if ( empty( $product ) || false === wc_get_loop_product_visibility( $product->ge
 ?>
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
+
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
@@ -53,6 +54,7 @@ if ( empty( $product ) || false === wc_get_loop_product_visibility( $product->ge
 	 *
 	 * @hooked woocommerce_template_loop_rating - 5
 	 * @hooked woocommerce_template_loop_price - 10
+	 
 	 */
 	do_action( 'woocommerce_after_shop_loop_item_title' );
 

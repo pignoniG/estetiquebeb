@@ -23,7 +23,18 @@ get_header();
 
 			<div class="cell">
 
-			<?php echo do_shortcode('[newsletter]'); ?>
+				<div class="cell titoli">
+
+					
+					<h3 class="titolo corsivo">offerte speciali e news</h3>
+
+					<h2 class="sottotitolo maiuscolo"><?php echo do_shortcode('[newsletter]'); ?></h2>
+
+
+				</div>
+
+
+			
 			
 			</div>
 		</div>

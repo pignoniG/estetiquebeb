@@ -79,14 +79,14 @@ get_header();
 	<div class="grid-container">
 
 
-		<div class="grid-x sovra_contenitore_corpo left form-container">
-	<div class="cell small-12 medium-6 large-6 contenitore_corpo left form ">
+		<div class="grid-x sovra_contenitore_corpo left form-container ">
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo left form medium-order-1 small-order-2 ">
 		 
 		<?php echo do_shortcode('[contact-form-7 id="252" title="Seduta Gratuita"]'); ?>	
 
 	</div>
 	
-	<div class="cell small-12 medium-6 large-6 contenitore_corpo left ">
+	<div class="cell small-12 medium-6 large-6 contenitore_corpo left medium-order-2 small-order-1">
 	
 		<h4 class="titolo corsivo">Epilazione laser</h4>
 				<h5 class="sottotitolo maiuscolo">PRIMA SEDUTA GRATUITA*</h5>
@@ -191,7 +191,7 @@ get_header();
 				    			<div class="immagine_trattamento" style="background-image: url('<?php echo($immagine_trattamento); ?>');" ></div> 
 				    		
 
-								<h5 class="sottotitolo maiuscolo" > <?php echo $sottotitolo_blocco; ?> </h5>
+								<h5 class="sottotitolo maiuscolo" > <?php echo $nome_trattamento; ?> </h5>
 								</a>	
 
 

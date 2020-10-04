@@ -19,31 +19,110 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
+
+
+
+?>
+
+	<main id="primary" class="site-main">
+
+		<div class="grid-container">
+			<div class="grid-x">
+
+				<div class="cell immagine_copertina">
+					<?php 
+						$immagine_copertina = get_field('immagine_copertina',345);
+						if( !empty( $immagine_copertina ) ): ?>
+
+					    	<img class="immagine_copertina" src="<?php echo esc_url($immagine_copertina['url']); ?>" alt="<?php echo esc_attr($immagine_copertina['alt']); ?>" />
+
+					<?php endif; ?>
+				</div>
+
+				<div class="cell titoli">
+
+					<h3 class="titolo corsivo">Fai un regalo</h3>
+
+					<h2 class="sottotitolo maiuscolo"> <?php the_field('sottotitolo',345); ?></h2>
+
+
+				</div>
+
+			</div>
+			
+				<?php
+				// Check rows exists.
+				if( have_rows('post_body',345) ):
+
+					$contatore_corpo=0;
+				
+				    // Loop through rows.
+				    while( have_rows('post_body',345) ) : the_row();
+
+
+				    	$titolo_blocco = get_sub_field('titolo_blocco');
+				    	$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');
+				    	$selettore_tabella = get_sub_field('selettore_tabella');
+
+						if( get_sub_field('selettore_tabella') == 'Immagine e testo' ) {
+
+							$immagine_blocco = get_sub_field('immagine_blocco');
+							$testo_blocco = get_sub_field('testo_blocco');
+						    
+
+						    if(($contatore_corpo % 2) == 0){ 
+						    	
+						    	include(locate_template('template-parts/body_left.php'));
+						    }
+						    else{
+						    	include(locate_template('template-parts/body_right.php'));
+						    }
+
+						    $contatore_corpo++;  
+
+						}
+						if( get_sub_field('selettore_tabella') == 'Tabella' ) { 
+							$tabella_blocco = get_sub_field('tabella_blocco');
+
+						   include(locate_template('template-parts/body_tabella.php'));
+						}
+				
+			
+
+				       
+
+
+				        // Do something...
+				
+				    // End loop.
+				    endwhile;
+				
+				// No value.
+				else :
+				    // Do something...
+				endif;
+
+				?>
+
+
+
+			<div class="grid-x">
+	
+
+
+<?php
 /**
  * Hook: woocommerce_before_main_content.
  *
  * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
- * @hooked woocommerce_breadcrumb - 20
+
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
 
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
-</header>
+
 <?php
 if ( woocommerce_product_loop() ) {
 
@@ -65,8 +144,7 @@ if ( woocommerce_product_loop() ) {
 			/**
 			 * Hook: woocommerce_shop_loop.
 			 */
-			do_action( 'woocommerce_shop_loop' );
-
+			
 			wc_get_template_part( 'content', 'product' );
 		}
 	}
@@ -94,12 +172,11 @@ if ( woocommerce_product_loop() ) {
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
 do_action( 'woocommerce_after_main_content' );
+	?>	
+		</div>
+		</div>
 
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
+	</main><!-- #main -->
 
-
+<?php
 get_footer( 'shop' );

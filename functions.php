@@ -105,6 +105,84 @@ if ( ! function_exists( 'estetiquebeb_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'estetiquebeb_setup' );
 
+
+
+function remove_woo_actions(){
+	
+		/**
+ * giovanni
+ */
+
+			remove_action('woocommerce_template_single_title', 'woocommerce_template_single_title', 5);
+			
+			remove_action('woocommerce_template_single_rating', 'woocommerce_template_single_rating', 10);
+   			
+   			remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+
+   			remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30, 0 );
+   			remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20, 0 );
+
+
+   			remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5, 0 );
+
+   			remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10, 0 );
+
+
+
+   			/**
+		 * Hook: woocommerce_single_product_summary.
+		 *
+		 * @hooked woocommerce_template_single_title - 5
+		 * @hooked woocommerce_template_single_rating - 10
+		 * @hooked woocommerce_template_single_price - 10
+		 * @hooked woocommerce_template_single_excerpt - 20
+		 * @hooked woocommerce_template_single_add_to_cart - 30
+		 * @hooked woocommerce_template_single_meta - 40
+		 * @hooked woocommerce_template_single_sharing - 50
+		 * @hooked WC_Structured_Data::generate_product_data() - 60
+		 */
+
+
+
+			//remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+
+			remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+			
+			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+			
+			add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 31 );
+
+			
+
+
+			//remove_action('woocommerce_template_single_price', 'woocommerce_template_single_price', 10);
+			
+			//remove_action('woocommerce_template_single_excerpt', 'woocommerce_template_single_excerpt', 20);
+			
+			//remove_action('woocommerce_template_single_add_to_cart', 'woocommerce_template_single_add_to_cart', 30);
+			
+			//remove_action('woocommerce_template_single_meta', 'woocommerce_template_single_meta', 40);
+			
+			//remove_action('woocommerce_template_single_sharing', 'woocommerce_template_single_sharing', 50);
+			
+			//remove_action('woocommerce_output_product_data_tabs', 'woocommerce_output_product_data_tabs', 10);
+		 	
+		 	//remove_action('woocommerce_upsell_display', 'woocommerce_upsell_display', 15);
+		 	
+			//remove_action('woocommerce_output_related_products', 'woocommerce_output_related_products', 20);
+
+
+
+/**
+ * giovanni
+ */
+
+}
+
+
+add_action( 'after_setup_theme', 'remove_woo_actions' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
