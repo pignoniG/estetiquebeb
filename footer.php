@@ -42,7 +42,20 @@
 				?>
 
 					
+		
 
+	
+				<div class="cell titoli">
+
+					
+					<h3 class="titolo corsivo">offerte speciali e news</h3>
+
+					<h2 class="sottotitolo maiuscolo">ISCRIVITI ALLA NEWSLETTER</h2>
+
+
+				</div>
+
+		
 
 
 
