@@ -81,13 +81,19 @@
 					<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JGJBNKxMdAoqopOGXCjaift5A17FkviY" ></iframe> -->
 				</div>
 
-				<div class="cell testo_footer indirizzi small-12 medium-6 large-6">
+				<div class="cell testo_footer indirizzi small-12 medium-4 large-4">
 						<?php the_field('campo_editable_sinistro',48); ?>
 						
 
 					</div>
 
-					<div class="cell orari small-12 medium-6 large-6">
+					<div class="cell testo_footer indirizzi small-12 medium-4 large-4">
+						<?php the_field('campo_editable_centro',48); ?>
+						
+
+					</div>
+
+					<div class="cell orari small-12 medium-4 large-4">
 						
 						<?php the_field('campo_editable_destro',48); ?>
 					</div>
