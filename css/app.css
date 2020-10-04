@@ -63,6 +63,10 @@ div.cell.map_container{
 	/*filter: grayscale(100%);*/
 
 }
+div.leaflet-control-attribution.leaflet-control{
+	display: none;
+}
+
 div.cell.map_container #map{
 	width: 100vw;
 	height: 35vw;
