@@ -79,7 +79,7 @@ get_header();
 	<div class="grid-container">
 
 
-		<div class="grid-x sovra_contenitore_corpo left">
+		<div class="grid-x sovra_contenitore_corpo left form-container">
 	<div class="cell small-12 medium-6 large-6 contenitore_corpo left form ">
 		 
 		<?php echo do_shortcode('[contact-form-7 id="252" title="Seduta Gratuita"]'); ?>	
