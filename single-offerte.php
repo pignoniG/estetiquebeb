@@ -85,7 +85,7 @@ get_header();
 
 
 					<?php if ($giorni < 1): ?>
-						<div class="cell timer cell small-6 medium-3 large-3">
+						<div class="cell timer cell small-6 medium-4 large-4">
 
 							<div id="countdownOfferta_secondi" data-date="<?php echo get_field('data_di_scadenza') ;?>" class="countdownBox" style=""></div>
 							</div>
