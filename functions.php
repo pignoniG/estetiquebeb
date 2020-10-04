@@ -82,6 +82,7 @@ if ( ! function_exists( 'estetiquebeb_setup' ) ) :
 				)
 			)
 		);
+		add_theme_support( 'woocommerce' );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -218,6 +219,7 @@ function aftermath_js(){
 
 }
 add_action('wp_enqueue_scripts', 'aftermath_js');
+
 
 
 

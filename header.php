@@ -151,10 +151,10 @@
 			    
 						];
 
-						$posts = get_posts($args);
+						$post_list = get_posts($args);
 
 
-        				foreach ($posts as $post) :
+        				foreach ($post_list as $post) :
         			
 
         					if( get_field('trattamento_singolo',$post->ID) ) {
@@ -242,4 +242,5 @@
 
 </div>	</div></div>	
 </header><!-- #masthead -->
-<?php wp_reset_query();?>
+<?php wp_reset_query();
+wp_reset_postdata();?>
