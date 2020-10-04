@@ -190,6 +190,54 @@ get_header();
 		</div>
 
 
+			<div class="grid-container">
+
+				<?php
+				// Check rows exists.
+				if( have_rows('post_body_clessidra') ):
+
+		
+				
+				    // Loop through rows.
+				    while( have_rows('post_body_social') ) : the_row();
+
+				    	$titolo_blocco = get_sub_field('titolo_blocco');
+				    	$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');
+				    	
+
+						
+
+						$immagine_blocco = get_sub_field('immagine_blocco');
+						$testo_blocco = get_sub_field('testo_blocco');
+						
+						if(($contatore_corpo % 2) == 0){ 
+							
+							include(locate_template('template-parts/body_left.php'));
+						}
+						else{
+							include(locate_template('template-parts/body_right.php'));
+						}
+
+						$contatore_corpo++;  
+
+						
+						
+
+				        // Do something...
+				
+				    // End loop.
+				    endwhile;
+				
+				// No value.
+				else :
+				    // Do something...
+				endif;
+
+				?>
+
+	</div>
+
+
 
 	</main><!-- #main -->
 
