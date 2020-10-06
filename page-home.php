@@ -186,7 +186,7 @@ get_header();
 				    	?>
 
 				    		<div class="cell small-12 medium-4 large-4 contenitore_trattamenti_piu_richiesti <?php echo "n-".$contatore_trattamenti_piu_richiesti; ?>" >
-				    			<a href='<?php $link_trattamento; ?>'>
+				    			<a href='<?php echo($link_trattamento); ?>'>
 
 				    			<div class="immagine_trattamento" style="background-image: url('<?php echo($immagine_trattamento); ?>');" ></div> 
 				    		
