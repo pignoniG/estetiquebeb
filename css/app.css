@@ -1087,7 +1087,7 @@ table .strikethrough:before {
 
 	header#masthead nav.top_navigation li.menu-element > a{
 		color: #9F9F9F;
-		text-transform: capitalize;
+		text-transform: uppercase;
 	}
 
 	header#masthead.hovers_top_slider nav.top_navigation li.menu-element > a, 	header#masthead.hovers_top_slider nav.top_navigation li.menu-element button.svg_icon {
