@@ -128,7 +128,7 @@ get_header();
 				    	$sottotitolo_blocco = get_sub_field('sottotitolo_blocco');
 				    	$selettore_tabella = get_sub_field('selettore_tabella');
 
-						if( get_sub_field('selettore_tabella') == 'Immagine e testo' ) {
+						
 
 							$immagine_blocco = get_sub_field('immagine_blocco');
 							$testo_blocco = get_sub_field('testo_blocco');
@@ -144,12 +144,7 @@ get_header();
 
 						    $contatore_corpo++;  
 
-						}
-						if( get_sub_field('selettore_tabella') == 'Tabella' ) { 
-							$tabella_blocco = get_sub_field('tabella_blocco');
-
-						   include(locate_template('template-parts/body_tabella.php'));
-						}
+					
 				
 			
 
