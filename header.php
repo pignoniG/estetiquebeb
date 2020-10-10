@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="7gYZ90ObH6Q0_S7DoAm8ejangJu9qtTBMO99BRHLhkM" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <script type="text/javascript">
   var templateUrl = '<?= get_bloginfo("template_url"); ?>';
