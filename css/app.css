@@ -25,6 +25,10 @@ div.shameful_cover{
 	
 
 }
+
+div.policies{
+	margin-top: 3rem;
+}
 body.home div.shameful_cover{
 	display: flex; 
 

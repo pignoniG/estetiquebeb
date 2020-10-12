@@ -22,7 +22,15 @@
   </script>
 
 	<?php wp_head(); ?>
+  
+  <script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"it","siteId":2022012,"cookiePolicyId":92045316, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#b6c219","acceptButtonCaptionColor":"white","customizeButtonColor":"#808081","customizeButtonCaptionColor":"white","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","position":"float-top-center","textColor":"#808081","backgroundColor":"#ffffff" }};
+</script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
 </head>
+
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>

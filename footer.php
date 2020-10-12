@@ -67,7 +67,7 @@
 					<div class="tnp-field tnp-field-email"><input class="tnp-email" type="email" name="ne" required placeholder="Email"></div>
 					<div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> Voglio ricevere mail promozionali riguardo le offerte di B&B Estetique.</label></div>
 					<div class="tnp-field tnp-privacy-field"><label><input type="checkbox" name="ny" required class="tnp-privacy"> Accetto l’informativa sulla 
-						<a href="<?php echo get_permalink(3); ?>">privacy</a>.</label></div>
+						<a href="https://www.iubenda.com/privacy-policy/92045316">privacy</a>.</label></div>
 
 					<div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Iscriviti" >
 					</div>
@@ -104,8 +104,22 @@
 					<?php $immagine_logo = get_field('logo',48);?>
 
 					<img src="<?php echo esc_url($immagine_logo['url']);?> ">
+
+
+					<div class="policies">
+					
+					<a href="https://www.iubenda.com/privacy-policy/92045316" class="iubenda-white no-brand iubenda-embed" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+
+					<a href="https://www.iubenda.com/privacy-policy/92045316/cookie-policy" class="iubenda-white no-brand iubenda-embed" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+
+					<a href="https://www.iubenda.com/termini-e-condizioni/92045316" class="iubenda-white no-brand iubenda-embed" title="Termini e Condizioni ">Termini e Condizioni</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 				</div>
 
+
+
+				</div>
+
+				
 
 
 
