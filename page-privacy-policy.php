@@ -15,8 +15,16 @@ get_header();
 		<div class="grid-container">
 			<div class="grid-x">
 
-	
 				<div class="cell titoli">
+					
+
+					<?php the_title( '<h3 class="titolo corsivo">', '</h3>' ); ?>
+
+				
+
+
+				</div>
+				<div class="cell">
 
 					<a href="https://www.iubenda.com/privacy-policy/92045316" class="iubenda-white no-brand iubenda-embed iub-body-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 
