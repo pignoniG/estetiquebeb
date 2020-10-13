@@ -25,6 +25,15 @@ div.shameful_cover{
 	
 
 }
+div.white_cover{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	top: calc(50% + 70px);
+}
+
 
 div.policies{
 	margin-top: 3rem;
@@ -36,6 +45,9 @@ body.home div.shameful_cover{
 div.shameful_cover svg{
 	margin: auto;
 	vertical-align: middle;
+	position: relative;
+	top: 200px;
+	transition: top 2s;
 }
 main{
 	display: block;
