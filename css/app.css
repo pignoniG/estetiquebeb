@@ -1613,6 +1613,12 @@ header#masthead {
 
 		@media screen and (max-width: 39.9375em) {
 
+		div.carousel-cell {
+			width: 100vw;
+			height: calc(100vh - 65px);
+			position: relative;
+		}
+
 
 			div.carousel-cell div.carousel-overlay {
 				position: absolute;
