@@ -14,7 +14,7 @@ padding-top: 67px;
 div.shameful_cover{
 	display: none;
 	background-color: #FFF;
-	z-index: 9999999999999999999;
+	z-index:99999999 !important;
 	width:auto;
 	height: auto;
 	position: fixed;
