@@ -1616,12 +1616,13 @@ header#masthead {
 
 			div.carousel-cell div.carousel-overlay {
 				position: absolute;
-			    left: 8vw;
-			    top: 50%;
-    			transform: translate(0, -50%);
+			   
+			    top: initial;
+    			transform: translate(0, 0);
 			    height: min-content;
-				left: 8vw;
-    			right: 8vw;
+				left: 5vw;
+				bottom: 5vw;
+    			right: 5vw;
 				background-image: none!important;
 				background: #ffffffe5;
 				backdrop-filter: blur(10px);
