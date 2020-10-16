@@ -18,7 +18,7 @@
 
 				<?php
 					$featured_offerta = get_field('offerta_in_evidenza',48);
-					if( $featured_offerta ): 
+					if( $featured_offerta and !is_singular( 'offerte' )): 
 
 						$post = $featured_offerta;
 						setup_postdata($post);
@@ -82,7 +82,7 @@
 					<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JGJBNKxMdAoqopOGXCjaift5A17FkviY" ></iframe> -->
 				</div>
 
-				<div class="cell testo_footer indirizzi small-12 medium-4 large-4">
+					<div class="cell testo_footer indirizzi small-12 medium-4 large-4">
 						<?php the_field('campo_editable_sinistro',48); ?>
 						
 
