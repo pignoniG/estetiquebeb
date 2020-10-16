@@ -103,8 +103,8 @@ get_header();
 
 				<div class="cell prezzi">
 
-					<h4 class="prezzo barrato"> <span class="strikethrough"><?php the_field('prezzo_intero'); ?>€</span></h4>
-					<h2 class="prezzo"> <?php the_field('prezzo_ridotto'); ?>€</h2>
+					<h4 class="prezzo barrato"> <span class="strikethrough"><?php the_field('prezzo_intero');?></span></h4>
+					<h2 class="prezzo"> <?php the_field('prezzo_ridotto');?></h2>
 
 					<p class="commento_prezzo"> <?php the_field('commento_prezzo'); ?> </p>
 
