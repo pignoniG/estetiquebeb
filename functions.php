@@ -273,7 +273,16 @@ function offerte_js(){
 }}
 add_action('wp_enqueue_scripts', 'offerte_js');
 
+function prevent_access_to_product_page(){
+    global $post;
+    if ( is_product() ) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+    }
+}
 
+add_action('wp','prevent_access_to_product_page');
 
 function flickity_js(){
     if ( is_front_page() || is_home()  ){
