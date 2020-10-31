@@ -128,6 +128,11 @@ function remove_woo_actions(){
    			remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10, 0 );
 
 
+   			remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+
+			remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+
+
 
    			/**
 		 * Hook: woocommerce_single_product_summary.
@@ -298,7 +303,14 @@ function aftermath_js(){
 }
 add_action('wp_enqueue_scripts', 'aftermath_js');
 
-
+add_filter( 'add_to_cart_text', 'woo_custom_product_add_to_cart_text' );            // < 2.1
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_product_add_to_cart_text' );  // 2.1 +
+  
+function woo_custom_product_add_to_cart_text() {
+  
+    return __( 'ACQUISTA', 'woocommerce' );
+  
+}
 
 
 /**

@@ -441,7 +441,11 @@ table .strikethrough:before {
     			padding: 20px;
     			padding-right: 50px;
 			}
-			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
+
+
+
+
+			div.offerta_in_evidenza_testo a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button {
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
@@ -451,14 +455,20 @@ table .strikethrough:before {
     			height: 50px;
     			color: #b6c219;
     			padding-bottom: 8px;
-    			line-height: 18px;
+    			line-height: 20px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
     			letter-spacing: 2px;
     			text-transform: uppercase;
 			}
+
+			div.offerta_in_evidenza_testo a.button,.woocommerce ul.products li.product .button {
+		
+    			line-height: 24px;
+    		
+			}
 			div.offerta_in_evidenza_testo a:hover, div.carousel-overlay a:hover,
-			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover{
+			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover,.woocommerce ul.products li.product .button:hover {
 				color: white!important;
 				background-color: #b6c219!important;
 				border-color: #b6c219!important;
@@ -706,7 +716,7 @@ table .strikethrough:before {
     			padding: 20px;
     			padding-right: 50px;
 			}
-			div.offerta_in_evidenza_testo a, div.carousel-overlay a{
+			div.offerta_in_evidenza_testo a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button{
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
@@ -716,16 +726,22 @@ table .strikethrough:before {
     			height: 50px;
     			color: #b6c219;
     			padding-bottom: 8px;
-    			line-height: 18px;
+    			line-height: 20px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
     			letter-spacing: 2px;
     			text-transform: uppercase;
 			}
-			div.offerta_in_evidenza_testo a:hover, div.carousel-overlay a:hover,
+			div.offerta_in_evidenza_testo a.button,.woocommerce ul.products li.product .button {
+		
+    			line-height: 24px;
+    		
+			}
+
+			div.offerta_in_evidenza_testo a.button:hover, div.carousel-overlay a:hover,
 			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover,
 			.tnp-subscription input.tnp-submit:hover,
-			.tnp-field input[type="submit"]:hover{
+			.tnp-field input[type="submit"]:hover, .woocommerce ul.products li.product .button:hover{
 				color: white!important;
 				background-color: #b6c219!important;
 				border-color: #b6c219!important;
@@ -890,7 +906,7 @@ table .strikethrough:before {
     			height: 50px;
     			color: #b6c219;
     			padding-bottom: 8px;
-    			line-height: 18px;
+    			line-height: 20px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
     			letter-spacing: 1px;
@@ -994,7 +1010,7 @@ table .strikethrough:before {
     			height: 50px;
     			color: #b6c219;
     			padding-bottom: 8px;
-    			line-height: 18px;
+    			line-height: 20px;
     			font-family: 'Lato',Helvetica,Roboto,Arial,sans-serif;
     			font-weight: 1000;
     			letter-spacing: 1px;
@@ -1685,6 +1701,101 @@ header#masthead {
 
 /* home fine */
 
+li.product.type-product.has-post-thumbnail img{
+	border-radius: 30px;
+	box-shadow: 0px 0px 40px #0003;
+}
+
+.woocommerce .products ul, .woocommerce ul.products {
+	margin: 0 0 1em;
+	padding: 0;
+	padding-left: 8%;
+	padding-right: 8%;
+	list-style: none outside;
+	clear: both;
+	text-align: center;
+	display: flex;
+}
+.woocommerce ul.products li.product .button {
+margin-top: 2em;
+max-width: 100%;
+
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	float: left;
+	margin: 3.8% 3.8% 2.992em 3.8%;
+	padding: 0;
+	position: relative;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+@media only screen and (max-width: 768px){
+	.woocommerce .products ul, .woocommerce ul.products {
+	margin: 0 0 1em;
+	padding: 0;
+	padding-top: 3rem;
+	padding-left: 8%;
+	padding-right: 8%;
+	list-style: none outside;
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+.woocommerce img, .woocommerce-page img {
+	height: auto;
+	max-width: 300px;
+	width: 100%;
+}
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+	/* float: left; */
+	/* float: left; */
+	clear: both;
+	width: 100%;
+	margin: 0 0 2.992em;
+}
+
+.woocommerce ul.products li.product .button {
+margin-top: 2em;
+display: block;
+max-width: 50%;
+margin-left: auto;
+margin-bottom: 2rem;
+margin-right: auto;
+}
+}
+
+
+/* regalainizio */
+
+	/* regala general*/
+
+	/* regala extra medium*/
+
+		@media only screen and (min-width: 63.9375em)  {
+		}
+
+	/* regala medium*/
+
+		@media only screen and (max-width: 63.9375em)  {
+		}
+
+	/* regala mobile*/
+
+		@media screen and (max-width: 39.9375em) {
+		}
+
+	/* regala extra mobile*/
+		@media screen and (max-width: 28.125em) {
+		}
+
+
+/* XXXXX fine */
 
 
 /* XXXXX inizio */

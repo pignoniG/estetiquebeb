@@ -106,8 +106,8 @@ get_header( 'shop' );
 
 
 
-			<div class="grid-x">
-	
+<div class="grid-x">
+	<div class="cell">
 
 
 <?php
@@ -172,11 +172,10 @@ if ( woocommerce_product_loop() ) {
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
 do_action( 'woocommerce_after_main_content' );
-	?>	
+	?>		</div>
 		</div>
-		</div>
-
-	</main><!-- #main -->
+	</div>
+</main><!-- #main -->
 
 <?php
 get_footer( 'shop' );
