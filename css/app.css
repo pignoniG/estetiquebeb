@@ -1769,6 +1769,11 @@ margin-left: auto;
 margin-bottom: 2rem;
 margin-right: auto;
 }
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+
+border-radius: 0px; 
+
 }
 
 
