@@ -445,7 +445,7 @@ table .strikethrough:before {
 
 
 
-			div.offerta_in_evidenza_testo a.button , div.testo_blocco a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button {
+			div.offerta_in_evidenza_testo a.button , div.testo_blocco a.button, div.testo_blocco a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button {
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
@@ -467,7 +467,7 @@ table .strikethrough:before {
     			line-height: 24px;
     		
 			}
-			div.offerta_in_evidenza_testo a:hover, div.carousel-overlay a:hover,
+			div.offerta_in_evidenza_testo a.button:hover, div.testo_blocco a.button:hover, div.carousel-overlay a:hover,
 			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover,.woocommerce ul.products li.product .button:hover {
 				color: white!important;
 				background-color: #b6c219!important;
