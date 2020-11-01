@@ -1748,7 +1748,7 @@ max-width: 100%;
 	display: block;
 }
 
-.woocommerce img, .woocommerce-page img {
+.woocommerce img.attachment-woocommerce_thumbnail, .woocommerce-page img.attachment-woocommerce_thumbnail {
 	height: auto;
 	max-width: 300px;
 	width: 100%;
