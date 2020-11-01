@@ -445,7 +445,7 @@ table .strikethrough:before {
 
 
 
-			div.offerta_in_evidenza_testo a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button {
+			div.offerta_in_evidenza_testo a.button , div.testo_blocco a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button {
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
@@ -462,7 +462,7 @@ table .strikethrough:before {
     			text-transform: uppercase;
 			}
 
-			div.offerta_in_evidenza_testo a.button,.woocommerce ul.products li.product .button {
+			div.offerta_in_evidenza_testo a.button , div.testo_blocco a.button,.woocommerce ul.products li.product .button {
 		
     			line-height: 24px;
     		
@@ -716,7 +716,7 @@ table .strikethrough:before {
     			padding: 20px;
     			padding-right: 50px;
 			}
-			div.offerta_in_evidenza_testo a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button{
+			div.offerta_in_evidenza_testo a.button , div.testo_blocco a.button, div.carousel-overlay a,.woocommerce ul.products li.product .button{
 				margin-top: 10px;
     			-ms-transform: translateY(-50%);
     			position: relative;
@@ -732,13 +732,13 @@ table .strikethrough:before {
     			letter-spacing: 2px;
     			text-transform: uppercase;
 			}
-			div.offerta_in_evidenza_testo a.button,.woocommerce ul.products li.product .button {
+			div.offerta_in_evidenza_testo a.button , div.testo_blocco a.button,.woocommerce ul.products li.product .button {
 		
     			line-height: 24px;
     		
 			}
 
-			div.offerta_in_evidenza_testo a.button:hover, div.carousel-overlay a:hover,
+			div.offerta_in_evidenza_testo a.button:hover , div.testo_blocco a.button:hover, div.carousel-overlay a:hover,
 			input.wpcf7-form-control.wpcf7-submit:hover, input.tnp-submit:hover,
 			.tnp-subscription input.tnp-submit:hover,
 			.tnp-field input[type="submit"]:hover, .woocommerce ul.products li.product .button:hover{
